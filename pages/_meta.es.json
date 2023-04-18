@@ -7,11 +7,11 @@
     "troubleshooting": "Solución de Problemas",
     "about": {
       "title": "Sobre nosotros",
-      "type": "Página"
+      "type": "page"
     },
     "contact": {
       "title": "Contáctanos ↗",
-      "type": "Página",
+      "type": "page",
       "href": "https://darkbot.eu/",
       "newWindow": true
     }
