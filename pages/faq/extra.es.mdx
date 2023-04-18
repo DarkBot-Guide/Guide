@@ -1,0 +1,51 @@
+## 1. Prioridad para los NPCs (es la misma para las cajas)
+
+1. Ejemplo 1
+```bash
+A -5 Prioridad
+B 0 Prioridad
+```
+Irá primero a por A
+
+2. Ejemplo
+```bash 
+A 2 Prioridad
+B -6 Prioridad
+```
+Irá primero a por B
+
+3. Ejemplo 3
+```bash 
+A 0 Prioridad
+B -20 Prioridad (Después de un rato aparece cerca nuestra)
+```
+Irá primero a por B
+ 
+En este caso, si el bot  esta disparando al NPC A y le queda 50%, si aparece el NPC B, dejará de atacar al NPC A y atacará al NPC B
+Si la diferencia de prioridad es como 20 prioridades por debajo de los demás que uno siempre será preferido no importa lo que Bot está disparando
+
+4. Ejemplo 4
+```bash
+A 15 Prioridad
+B 0 Prioridad
+```
+Esta un poco complicado / difícil
+Si A tiene menos de 50%▼ de vida continuará matándolo si tiene más de  50%▲ de vida irá a matar a B.
+
+Más información sobre esto: (Gracias a Punisher)
+1. El NPC que esta apuntado y tenga la vida completa, obtiene 10 puntos de prioridad extra
+2. Cada 10% de vida menos en el NPC que esta apuntado da 1 de prioridad extra.
+Ejemplo:
+```bash
+NPC apuntado con 50% de vida, obtiene 15 puntos extra de prioridad.
+NPC apuntado con 20% de vida, obtiene 18 puntos extra de prioridad.
+```
+
+## 2. ¿Cómo ejecutar varios bots a la vez?
+
+1. Duplica la carpeta de tu bot y cambiale al nombre que tu quieras
+![multipleBots](public/multipleBots1.png)
+
+2. Ejecútalo.
+
+![multipleBots](public/multipleBots2.png)

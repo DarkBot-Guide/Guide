@@ -1,0 +1,45 @@
+## 1. ¿Cómo instalar DarkBot en tu proprio?
+1. Crea un nuevo usuario, no (no usar usuario root)
+2. Abre el terminal,copia y pega este comando y pulsa enter:
+`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_desktop.sh`
+
+![linux1](public/linux1.png)
+
+## 2. Instalar DarkBot en un VPS
+1. Descarga PuTTy o alguna aplicación similar para conectar al VPS;
+
+`link de PuTTy:` https://www.putty.org/
+
+2. Crea un nuevo usuario, no (no usar usuario root) :
+3. open terminal, copy-paste this.command and click enter:
+`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_vps.sh`
+4. Cuando la instalación se haya completado, cierra la terminal, y conecta al vps vía RDP
+
+## 3. Cómo ejecutar DarkBot?
+
+Abre la terminal y escribe el sguiente comando:
+```bash
+cd Downloads/darkbot && java -jar DarkBot.jar
+```
+
+![linux2](public/linux2.png)
+
+## 4. Solución de problemas
+1. Si el bot pregunta por la verificación de discord, abre el navegador manualmente y ve a la direción http://localhost:55230/ y autoriza con tu cuenta de discord.
+2. Si la API falla al cargar, establece tanos_api en la configuración del bot o borra la configuración de la carpeta del bot y abrelo de nuevo.
+3. unknown command wget
+- sudo yum install wget
+4. unknown command unzip
+- sudo yum install uzip
+5. AppImages require FUSE to run.
+- sudo apt install fuse -y && sudo apt install libfuse2 -y
+
+## 5. FAQ
+1. ¿Qué es install_desktop.sh? :
+- Actualiza el sistema e instala java 17;
+- Descarga darkbot.zip y descomprime todos los archivos y los elimina.
+
+2. ¿Qué es install_vps.sh?:
+- Actualiza el sistema e instala java 17;
+- Descarga darkbot.zip y descomprime todos los archivos y los elimina.
+- Instala y confura el GUI y xRDP.

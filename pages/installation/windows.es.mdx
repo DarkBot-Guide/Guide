@@ -1,0 +1,74 @@
+# ¿Cómo instalar DarkBot en Windows?
+
+## 1. Instalación pre requisitos
+1. Descarga e instala el runtimes: https://darkbot.eu/downloads/Runtimes4DarkBot.exe (run it with admin privileges)
+
+> Runtimes4DarkBot instala Java 11 y vc++ 2015-2019. 
+
+> Si tienes este error: "Error Code: 1638 (0x00000666)", Eso significa que ya esta instalado.
+
+2. Puedes instalarlo manualmente:
+> https://aka.ms/vs/17/release/vc_redist.x64.exe - Visual Studio 2015-2022
+
+> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe - Java 17
+
+El bot solo funcionará si tienes instalado Java 11 o 17. Si tienes  Java 8, **por favor elimínalo**.
+
+## 2. Instala  DarkBot.jar
+1. Si eres **Donor**:Ve #experimental-downloads y descarga la única versión del bot.
+2. Si **no eres donor**: Ve a #unstable-downloads y descarga la única versión del bot.
+
+![botupdate](public/botupdate.png)
+
+3. Pon el DarkBot.jar descargado en la carpeta de tu bot. Todos los archivos serán creados cuando ejecutes DarkBot.jar
+![botFolder](public/botFolder.png)
+
+4. Haz lo mismo si estas usando VPS, pero debes deshabiltar la seguridad de IE.
+![DisablingIE](public/vps_ieDisable.png)
+
+## 3. Ejecutar el bot por primera vez
+
+Ejecuta darkbot clickeando dos veces el archivo Darkbot.jar. Cuando lo ejecutes, esta ventana de verificación aparecerá.
+
+![firstRun](public/discordAuth.png)
+
+❌ NO CIERRES ESTA VENTANA (Discord Auth) ❌
+
+Esta autenticación de Discord verifica en qué servidores de discord estás, si estás en un servidor que está en la lista negra del bot, no podrás usarlo.
+También comprueba el rol que tienes en nuestro servidor de discord. Haz clic en autorizar para completar la Autorización.
+
+Si se muestra esta venatana, significa que has pasado la verificación exitosamente.
+Ahora loguea en el bot.
+![firstRun](public/discordAuth2.png)
+
+## 4. Inicio de sesión
+
+Cuando ejecutes el bot, esta ventana aparecerá
+**1. User & pass**
+
+Aquí debes poner tus credenciales del juego
+
+![login](public/login1.png)
+
+**2. SID login**
+
+Aquí puedes iniciar sesión a través del SID.
+![login](public/login2.png)
+
+Cómo encontrar el SID?
+1. Pulsa el icono 🔒 que aparece al lado del link del juego (https://int6.darkorbit.com/indexInternal.es?action=internalStart&prc=100)
+2. Cookies en uso> int6.darkorbit.com > abre la carpeta de cookies
+3. Selecciona la cookie de dosid y copia los valores que hay en contenido y ponlo en el bot
+![dosid](public/dosid.png)
+
+**3. Guardado*
+
+Aquí puedes guardar los credenciales para que no tengas que ponerlos manualmente cada vez que inicies el bot
+
+![login](public/login3.png)
+
+## 5. Configuración dentro del juego
+ 1. Comenzar y terminar ataque en la barra rápida
+ 3. Asegurate de que las teclas del teclado de los ajustes del juego están bien puestas
+ 4. Pon los graficos bajos y en 2D o 3D (Si tienes VPS no uses 3D), 
+![In-game configuration](public/ingameConf.png)
