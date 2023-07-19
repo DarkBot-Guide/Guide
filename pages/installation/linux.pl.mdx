@@ -1,37 +1,47 @@
-# Jak zainstalować i uruchomić DarkBota w Linuksie?
+# Jak zainstalować i uruchomić DarkBota w systemie Linux?
 
 ## 1. Instalacja DarkBota na własnym komputerze
-- utwórz nowego użytkownika (nie używaj "root");
-- otwórz terminal;
-- skopiuj-wklej tą komendę i kliknij enter:
-> wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_desktop.sh
+1. utwórz nowego użytkownika (nie używaj „root”);
+2. otwórz terminal, skopiuj i wklej this.command i kliknij enter:
+`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_desktop.sh`
+
+![linux1](public/linux1.png)
 
 ## 2. Instalacja DarkBota na VPS
-- pobierz PuTTy lub inną podobną aplikację i połącz się z VPS;
-- utwórz nowego użytkownika (nie używaj "root");
-- skopiuj-wklej tą komendę i kliknij enter:
-> wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_vps.sh
-- Po zakończeniu instalacji zamknij terminal i połącz się z VPS poprzez Remote Desktop Connection (RDP).
+1. pobierz PuTTy lub inną podobną aplikację i połącz się z VPS;
 
-## 3. Aby uruchomić darkbota, wpisz polecenie w terminalu:
-- cd Downloads/darkbot && java -jar DarkBot.jar.
----
-## Rozwiązywanie problemów
-1. Jeśli bot poprosi o weryfikację, otwórz przeglądarkę ręcznie, przejdź do http://localhost:55230/ i autoryzuj swoje konto discord.
-2. Jeśli API nie załaduje się, ustaw API na tanos_api w ustawieniach bota lub usuń pliki konfiguracyjne z folderu bota, a następnie spróbuj ponownie.
+`Link PuTTy:` https://www.putty.org/
+
+2. utwórz nowego użytkownika (nie używaj „root”);
+3. otwórz terminal, skopiuj i wklej this.command i kliknij enter:
+`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_desktop.sh`
+4. Po zakończeniu instalacji zamknij terminal i połącz się z VPS przez Remote Desktop Connection (RDP).
+
+## 3. Jak uruchomić DarkBota?
+
+Otwórz terminal i wpisz następną komendę:
+```bash
+cd Downloads/darkbot && java -jar DarkBot.jar
+```
+
+![linux2](public/linux2.png)
+
+## 4. Rozwiązywanie problemów
+1. Jeśli bot poprosi o weryfikację, otwórz przeglądarkę ręcznie, przejdź do http://localhost:55230/ i autoryzuj swoje konto na discordzie.
+2. Jeśli API się nie ładuje, ustaw API na tanos_api w ustawieniach bota lub usuń pliki konfiguracyjne z folderu bota, a następnie spróbuj ponownie.
 3. nieznane polecenie wget
-- sudo yum install wget
-4. nieznana komenda unzip
-- sudo yum install uzip
-5. AppImages wymagają FUSE do uruchomienia.
+- sudo mniam zainstaluj wget
+4. nieznane polecenie rozpakuj
+- sudo mniam zainstaluj uzip
+5. AppImages wymagają FUSE do działania.
 - sudo apt install fuse -y && sudo apt install libfuse2 -y
----
-## FAQ
-1. install_desktop.sh
-- aktualizacja systemu & instalacja java 17;
-- pobranie darkbot.zip & rozpakowanie wszystkich plików & usunięcie archiwów.
 
-2. install_vps.sh
-- updating system & installing java 17;
+## 5. Często zadawane pytania
+1. install_desktop.sh to:
+- aktualizacja systemu i instalacja java 17;
+- pobieranie darkbot.zip i rozpakowywanie wszystkich plików oraz usuwanie archiwów.
+
+2. install_vps.sh to:
+- aktualizacja systemu i instalacja java 17;
 - instalacja i konfiguracja GUI i xRDP;
-- pobranie darkbot.zip & rozpakowanie wszystkich plików & usunięcie archiwów.
+- pobieranie darkbot.zip i rozpakowywanie wszystkich plików oraz usuwanie archiwów.

@@ -1,12 +1,12 @@
-# 1. Como ejecutar el bot de forma de que se inicie automáticamente?
+## 1. ¿Cómo iniciar automáticamente el bot?
 
-Abre la carpeta de tu bot y crea los archivos: *runbot.bat* y *file.properties*.
+Abra la carpeta de su bot y cree dos archivos: *runbot.bat* y *file.properties*.
 
-1. EN *file.properties* agrega tus credenciales y tu master-password(Si es que la tienes).
+1. En *archivo.propiedades* agregue nombre de usuario, inicio de sesión y contraseña maestra (si la tiene).
 
 ![fileProperties](public/fileProperties.png)
 
-2. En el archivo *runbot.bat* añade este comando:
+2. En *runbot.bat* agregue el siguiente comando:
 
 ```bash
 START javaw -jar DarkBot.jar -start -login file.properties
@@ -14,12 +14,12 @@ START javaw -jar DarkBot.jar -start -login file.properties
 
 ![RunBot](public/RunBot1.png)
 
-Si quieres ejecutar el bot con una configuración en especifico, entonces agrega:If you want to run bot with specific config, then add:
+Si desea ejecutar bot con una configuración específica, agregue:
 
 ```bash
 -config config_name
 ```
 
-Después de todos los cambios debería de verse así:
+Entonces, después de todos los cambios, debería verse así:
 
 ![RunBot](public/RunBot2.png)

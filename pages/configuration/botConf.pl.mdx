@@ -1,30 +1,25 @@
-## Jak ustawić autostart Bota?
+## 1. Jak automatycznie uruchomić bota?
 
-1. Otwórz folder z botem i utwórz nowy dokument tekstowy
+Otwórz folder bota i utwórz dwa pliki: *runbot.bat* i *file.properties*.
 
-- Dodaj nazwę użytkownika, hasło oraz hasło główne (jeżeli je posiadasz)
+1. W *file.properties* dodaj nazwę użytkownika, login i hasło główne (jeśli je posiadasz).
 
 ![fileProperties](public/fileProperties.png)
 
-- Zapisz plik jako file.properties
+2. W *runbot.bat* dodaj następną komendę:
 
-2. Utwórz plik runbot.bat oraz dodaj następujące komendy (jak na zrzucie ekranu)
-
-Zapisz i uruchom klikając dwukrotnie na plik RunBot.bat
+```bash
+START javaw -jar DarkBot.jar -start -login file.properties
+```
 
 ![RunBot](public/RunBot1.png)
-    ```bash
-    START javaw -jar DarkBot.jar -start -login file.properties
-    ```
 
-Jeżeli masz jakiś inny plik konfiguracyjny bota i chcesz go uruchomić, dodaj:
+Jeśli chcesz uruchomić bota z określoną konfiguracją, dodaj:
 
-    ```bash
-    -config *Twoja nazwa configu*
-    ```
+```bash
+-config config_name
+```
 
-Więc finalnie po wszystkich zmianach powinien wyglądać tak:
+Czyli po wszystkich zmianach powinno to wyglądać tak:
 
-    ```bash
-    START javaw -jar DarkBot.jar -start -login file.properties -config twojconfig
-    ```
+![RunBot](public/RunBot2.png)

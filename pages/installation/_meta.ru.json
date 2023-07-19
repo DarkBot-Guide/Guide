@@ -1,6 +1,6 @@
 {
-    "supportedos": "Поддерживаемые операционные системы",
-    "windows": "Windows",
-    "linux": "Linux",
-    "macos": "MacOS"
+  "supportedos": "Поддерживаемые операционные системы",
+  "windows": "Windows",
+  "linux": "Linux",
+  "macos": "MacOS"
   }

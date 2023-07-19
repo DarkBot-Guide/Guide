@@ -1,32 +1,83 @@
-# How to install & run DarkBot in Windows?
+# Jak zainstalować i uruchomić DarkBota w systemie Windows?
 
-## 1. Instalacja wymaganych aplikacji
-1. Pobierz i zainstaluj nasz runtime: https://darkbot.eu/downloads/Runtimes4DarkBot.exe (uruchom go z uprawnieniami administratora)
-- Runtimes4DarkBot instaluje Javę 11 i vc++ 2015-2019
+## 1. Instalowanie wymaganych aplikacji
+1. Pobierz i zainstaluj nasze środowisko wykonawcze: https://darkbot.eu/downloads/Runtimes4DarkBot.exe (uruchom go z uprawnieniami administratora)
+
+> Runtimes4DarkBot instaluje Javę 11 i vc++ 2015-2019.
+
+> Jeśli pojawi się ten błąd: „Kod błędu: 1638 (0x00000666)”, oznacza to, że program jest już zainstalowany.
+
 2. Możesz zainstalować go ręcznie:
-> https://aka.ms/vs/17/release/vc_redist.x64.exe - Visual Studio 2015-2022
+> https://aka.ms/vs/17/release/vc_redist.x64.exe — Visual Studio 2015-2022
 
-> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe - Java 17
+> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe — Java 17
 
-Jeśli masz jakąś inną wersję Javy, to **skasuj** ją.
+Bot działa tylko wtedy, gdy masz Javę 11 lub 17. Jeśli masz Javę 8 lub inną wersję, **usuń** ją.
 
-## 2. Instalacja DarkBot.jar.
-1. Jeśli jesteś **Donor**: Wejdź na stronę #experimental-downloads i pobierz najnowszą wersję bota.
-2. Jeśli jesteś **nieDonatorem**:  Przejdź do #unstable-downloads i pobierz najnowszą wersję bota.
-3. Umieść pobrany plik DarkBot.jar w swoim folderze z botami.
-4. Usuń stary plik DarkBot.exe (jeśli go masz) i kliknij dwukrotnie na DarkBot.jar, aby uruchomić bota.
+## 2. Instalacja DarkBot.jar
+1. Jeśli jesteś **Darczyńcą**: przejdź do #experimental-downloads i pobierz najnowszą wersję bota.
+2. Jeśli **nie jesteś dawcą**: przejdź do #unstable-downloads i pobierz najnowszą wersję bota.
 
-> Tutorial Video: https://www.youtube.com/watch?v=TwDYbtiDyjA
+![botupdate](public/botupdate.png)
 
-5. Te same działania, jeśli używasz VPS, ale musisz również wyłączyć ustawienia bezpieczeństwa IE
+3. Umieść pobrany plik DarkBot.jar w folderze bota. Wszystkie pliki zostaną utworzone po uruchomieniu DarkBot.jar
+
+![botFolder](public/botFolder.png)
+
+4. Te same czynności, jeśli używasz VPS, ale musisz także wyłączyć ustawienia zabezpieczeń IE
 
 ![DisablingIE](public/vps_ieDisable.png)
 
-## 3. Konfiguracja w grze
- 1. Włącz podwójne kliknięcie do ataku
- 2. Włącz Start & Stop attack using shortcut bar keys
- 3. Włącz auto-logowanie
- 4. Upewnij się, że prawidłowo ustawiłeś keybinds
- 5. Ustaw grafikę na low i 2D Mode, jeśli masz wolny (stary) PC / VPS.
+## 3. Pierwsze uruchomienie
 
-![Konfiguracja w grze](public/ingameConf.png)
+Uruchom darkbota, klikając dwukrotnie plik Darkbot.jar. Gdy to zrobisz, pojawi się to okno weryfikacji:
+
+![firstRun](public/discordAuth.png)
+
+❌ NIE ZAMYKAJ TEGO OKNA (Discord Auth) ❌
+
+To uwierzytelnianie Discord weryfikuje, na których serwerach Discord jesteś, jeśli jesteś na serwerze, który znajduje się na czarnej liście bota, nie będziesz mógł z niego korzystać.
+Sprawdza również rolę, jaką pełnisz na naszym serwerze niezgody. Kliknij autoryzację, aby zakończyć autoryzację.
+
+Jeśli otrzymamy tę stronę, oznacza to, że udało nam się pomyślnie uwierzytelnić.
+Teraz zaloguj się do bota.
+
+![firstRun](public/discordAuth2.png)
+
+## 4. Zaloguj się
+
+Podczas uruchamiania bota pojawi się to okno, w którym należy umieścić dane naszego konta.
+
+**1. Użytkownik i przepustka**
+
+Tutaj powinieneś wpisać swoją nazwę użytkownika i hasło do swojego konta DarkOrbit.
+
+![login](public/login1.png)
+
+**2. Logowanie SID**
+
+Tutaj powinieneś użyć SID i serwera.
+
+![login](public/login2.png)
+
+Jak znaleźć identyfikator SID i serwer?
+1. Kliknij prawym przyciskiem myszy na stronie, gdy jesteś zalogowany przez przeglądarkę
+2. Wybierz „wyświetl witrynę / źródło witryny” (przeniesie Cię do nowej karty lub notatnika itp.)
+3. CTRL + F i wpisz „sid” i masz swojego sid
+
+![dosid](public/dosid.png)
+
+**3. Zapisano**
+
+Tutaj możemy dodać i zapisać naszą nazwę użytkownika i hasło, więc nie trzeba ich wpisywać za każdym razem.
+
+![login](public/login3.png)
+
+## 5. Konfiguracja w grze
+  1. Włącz podwójne kliknięcie, aby zaatakować
+  2. Włącz atak Start & Stop za pomocą klawiszy paska skrótów
+  3. Włącz automatyczne logowanie
+  4. Upewnij się, że prawidłowo ustawiłeś skróty klawiszowe
+  5. Ustaw grafikę na niską i tryb 2D, jeśli masz wolny (stary) komputer PC / VPS lub uruchamiasz wiele botów
+
+![In-game configuration](public/ingameConf.png)
