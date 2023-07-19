@@ -1,79 +1,73 @@
-## 1. Załadowany plugin nie pojawia się w zakładce pluginów
+## 1. Załadowana wtyczka nie pojawia się w zakładce wtyczek
 
- 1. Upewnij się, że umieściłeś plugin w odpowiednim folderze. Wszystkie pluginy powinny być umieszczone w folderze o nazwie 'plugins'.
- 2. Jeśli załadowałeś plugin podczas działania bota, kliknij ikonę przeładowania (znajdującą się w prawym górnym rogu panelu ustawień) lub zrestartuj bota.
+  1. Upewnij się, że umieściłeś wtyczkę w odpowiednim folderze. Wszystkie wtyczki powinny być umieszczone w folderze o nazwie „plugins”.
+  2. Jeśli załadowałeś wtyczkę podczas działania bota, kliknij ikonę ponownego ładowania (znajdującą się w prawym górnym rogu panelu ustawień) lub zrestartuj bota.
+ 
+## 2. Wtyczka nie działa, a jej tło w zakładce wtyczek jest czerwone
 
+  Komunikaty o błędach i rozwiązania:
+  
+❌ Wymagana aktualizacja bota
 
-## 2.Plugin nie działa, a jego tło w zakładce pluginów jest czerwone
+   Przyczyna: Załadowałeś wtyczkę, która została zaprojektowana dla innej wersji bota niż faktycznie używasz
+  
+   Rozwiązania:
+   1. Usuń wtyczkę z folderu wtyczek i pobierz starszą wersję tej wtyczki.
+   2. Zaktualizuj bota do wersji obsługiwanej przez tę wtyczkę lub po prostu zaktualizuj do najnowszej
 
- Komunikaty o błędach i rozwiązania:
-
-❌ Wymagana aktualizacja bota.
-
-  Przyczyna: Załadowałeś plugin, który został zaprojektowany dla dalszej wersji bota niż faktycznie używasz
-
-  Rozwiązania:
-  1. Usuń wtyczkę z folderu pluginów i pobierz starszą wersję tej wtyczki.
-  2. Zaktualizuj bota do wersji, która jest obsługiwana przez tę wtyczkę lub po prostu zaktualizuj do najnowszej
-
-
-❌ Nieważny podpis
+❌ Nieprawidłowy podpis
 
 Możliwe przyczyny i rozwiązania:
-1. Serwery GitHub są tymczasowo wyłączone i nie jest możliwe zweryfikowanie podpisu wtyczki. Zanim przejdziesz dalej, sprawdź status serwerów GitHub (https://www.githubstatus.com/). Jeśli tak jest, po prostu cierpliwie czekaj, aż naprawią swoje serwery.
-2. Załadowałeś plugin, który pochodzi z niezaufanego źródła - ktoś Ci go wysłał lub znalazłeś go gdzieś w sieci. Lepiej nie używać takich wtyczek!
-3. Twoje IP zostało zablokowane przez serwery GitHub lub Twój dostawca internetu ograniczył Ci dostęp do stron GitHub. Połącz się z internetem z innego IP, na przykład udostępnij połączenie internetowe za pomocą telefonu lub użyj proxy.
+1. Serwery GitHub są tymczasowo wyłączone i nie można zweryfikować podpisu wtyczki. Zanim przejdziesz dalej, sprawdź stan serwerów GitHub (https://www.githubstatus.com/). W takim przypadku poczekaj cierpliwie, aż naprawią swoje serwery.
+2. Załadowałeś wtyczkę pochodzącą z niezaufanego źródła - ktoś Ci ją wysłał lub znalazłeś ją gdzieś w sieci. Lepiej nie używać tych wtyczek!
+3. Twoje IP zostało zablokowane przez serwery GitHub lub Twój dostawca internetu ograniczył Ci dostęp do stron GitHub. Połącz się z Internetem z innego adresu IP, na przykład udostępnij połączenie internetowe za pomocą telefonu lub użyj serwera proxy.
 
+❌ We wtyczce brakuje pliku plugin.json w katalogu głównym słoika
 
-❌ Wtyczce brakuje plugin.json w korzeniu słoika
-
-Powód: Umieściłeś plik .jar, który w rzeczywistości nie jest wtyczką dla bota. Możesz go usunąć z folderu wtyczek, ponieważ nie będziesz mógł go użyć.
-
-
-**🛠️ Tło wtyczki jest zielone, ale niektóre funkcje nie działają**.
-
+Powód: umieściłeś plik .jar, który tak naprawdę nie jest wtyczką dla bota. Możesz go usunąć z folderu wtyczek, ponieważ nie będziesz mógł z niego korzystać.
+ 
+**🛠️ Tło wtyczki jest zielone, ale niektóre funkcje nie działają**
+  
 ❌ Nie udało się załadować
 
 Możliwe przyczyny i rozwiązania:
-  1. Funkcja nie mogła zostać załadowana prawidłowo. Spróbuj kliknąć ikonę przeładowania lub zrestartować bota
-  2. Załadowałeś dwie (lub więcej) różne (lub takie same) wersje tej samej wtyczki do swojego bota. Jeśli tak jest, zamknij bota i usuń wszystkie duplikaty z folderu wtyczek.
-
+   1. Funkcja nie mogła zostać poprawnie załadowana. Spróbuj kliknąć ikonę przeładowania lub uruchom ponownie bota
+   2. Załadowałeś dwie (lub więcej) różne (lub te same) wersje tej samej wtyczki do swojego bota. W takim przypadku zamknij bota i usuń wszystkie duplikaty z folderu wtyczek.
+  
 ❌ Nie udało się zaznaczyć
 
 Możliwe rozwiązania:
-  1. Spróbuj przeładować wtyczki lub zrestartować bota
-  2. Wyłącz wszystkie inne zbędne funkcje wtyczek z zakładki pluginy, następnie zrestartuj bota.
-  3. Spróbuj starszej/nowszej wersji wtyczki lub użyj starszej wersji bota, ponieważ starsze wtyczki mogą nie działać poprawnie na nowszych.
-
+   1. Spróbuj przeładować wtyczki lub zrestartować bota
+   2. Wyłącz wszystkie inne niepotrzebne funkcje wtyczek w zakładce wtyczek, a następnie uruchom ponownie bota.
+   3. Wypróbuj starszą/nowszą wersję wtyczki lub użyj starszej wersji bota, ponieważ starsze wtyczki mogą nie działać poprawnie na nowszych.
 
 ## 3. Pole wyboru obok funkcji zostało zaznaczone, ale nie można kliknąć ikony koła zębatego, aby ją skonfigurować
 
-Powód: Włączona funkcja jest modułem [M], który najpierw musi zostać wybrany w wyborze modułów.
+Powód: Włączona funkcja to moduł [M], który należy najpierw wybrać w wyborze modułu.
 
 Rozwiązanie:
 
-1. Przejdź do Ustawień ogólnych i wybierz ją, a następnie wróć i sprawdź, czy masz dostęp do konfiguracji.
-2. Jeśli nie, wróć do ustawień ogólnych i przewiń na sam dół. Powinna się tam znajdować sekcja konfiguracyjna dla tego modułu.
-
-
-## 4. Nie działa funkcja "kamikaze
-
-🔹 Bot nie strzela do obcych w bramie, tylko przed nimi ucieka.
+1. Przejdź do Ustawień ogólnych i wybierz je, a następnie wróć i sprawdź, czy możesz uzyskać dostęp do konfiguracji.
+2. Jeśli nie, wróć do Ustawień ogólnych i przewiń w dół do samego dołu. Powinna tam być sekcja konfiguracji tego modułu.
+ 
+## 4. Funkcja kamikadze kekki nie działa
+ 
+🔹 Bot nie strzela do kosmitów w bramie, po prostu ucieka przed nimi
 
 Możliwe przyczyny i rozwiązania:
-  1. Nie podałeś numeru modułu kamikaze P.E.T. lub podany przez Ciebie numer jest nieadekwatny do pozycji modułu kamikaze w wyborze modułów zwierzaków w grze.
-  2. Nie ustawiłeś prawidłowo zasięgu tarczy i HP.
-  3. Poziom HP lub tarczy twojego statku jest zbyt niski, aby użyć kami, na przykład dlatego, że twój statek nie jest w stanie go napełnić, ponieważ jest zbyt wolny i jest ciągle atakowany przez obcych. Również. upewnij się, że nie ustawiłeś Moth lub Wheel jako formacji używanej do rzucania petów kamikaze, ponieważ stale zmniejszają one poziom twoich tarcz.
+   1. Nie podałeś numeru P.E.T. moduł kamikaze lub podany przez ciebie numer nie odpowiada pozycji modułu kami w wyborze modułu zwierzaka w grze.
+   2. Źle ustawiłeś tarczę i zasięg HP.
+   3. PŻ twojego statku lub poziom tarczy jest zbyt niski, aby użyć kami, na przykład, ponieważ twój statek nie jest w stanie go wypełnić, ponieważ jest zbyt wolny i jest stale atakowany przez kosmitów. Również. upewnij się, że nie ustawiłeś Ćmy ani Koła jako formacji używanej do rzucania kamikaze zwierzaka, ponieważ stale zmniejszają one poziom twoich tarcz.
+  
+🔹 Bot strzela tylko do kosmitów i nie używa kamikaze
 
-🔹 Bot strzela tylko do obcych i nie używa kamikaze.
+  Możliwe przyczyny i rozwiązania:
+   1. Nie włączyłeś i nie skonfigurowałeś funkcji kamikaze w sekcji konfiguracji kekki.
+   2. Nie określiłeś, na których NPC ma być użyty kamikaze. Aby to zrobić, przejdź do tabeli NPC, kliknij lewym przyciskiem myszy pole w dodatkowej kolumnie i dodaj odpowiednie flagi do obcych, których chcesz kami.
+   3. Używasz Kekka Reloaded 1.1.8, w którym funkcja kami jest zepsuta. Zamiast tego użyj Kekka Reloaded 1.0.4. Przejdź do kanału wtyczek i przewiń w górę. Znajdziesz to tam.
+  
+🔹 Bot wybiera moduł kamikaze, ale P.E.T. zachowuje się jak w trybie ochronnym
 
- Możliwe przyczyny i rozwiązania:
-  1. Nie włączyłeś i nie skonfigurowałeś funkcji kamikaze w sekcji konfiguracyjnej kekki.
-  2. Nie określiłeś, na których NPC ma być używany kamikadze. Aby to zrobić, przejdź do tabeli NPC, kliknij lewym przyciskiem myszy na pole w dodatkowej kolumnie i dodaj odpowiednie flagi do obcych, których chcesz kamikaze.
-  3. Używasz Kekki Reloaded 1.1.8, gdzie funkcja kami jest uszkodzona. Zamiast tego użyj Kekka Reloaded 1.0.4. Przejdź do kanału pluginów i przewiń do góry. Znajdziesz tam.
+  Możliwe przyczyny i rozwiązania:
 
-🔹 Bot wybiera moduł kamikaze, ale P.E.T. zachowuje się jak w trybie strażnika.
-
- Możliwe przyczyny i rozwiązania:
-
-  1.  HP P.E.T'a jest zbyt wysokie, aby się odpalić (musi być niższe niż 10%).
+   1. P.E.T-a jest zbyt wysokie, aby odpalić (musi być niższe niż 10%).

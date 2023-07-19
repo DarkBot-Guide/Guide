@@ -1,18 +1,18 @@
 {
-    "index": "Itroducción",
-    "installation": "Instalación",
-    "configuration": "Configuración",
-    "donors": "Rol Donor",
-    "faq": "FAQ",
-    "troubleshooting": "Solución de Problemas",
-    "about": {
-      "title": "Sobre nosotros",
-      "type": "page"
-    },
-    "contact": {
-      "title": "Contáctanos ↗",
-      "type": "page",
-      "href": "https://darkbot.eu/",
-      "newWindow": true
-    }
+  "index": "Itroducción",
+  "installation": "Instalación",
+  "configuration": "Configuración",
+  "donors": "Rol Donor",
+  "faq": "FAQ",
+  "troubleshooting": "Solución de Problemas",
+  "about": {
+    "title": "Sobre nosotros",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contáctanos ↗",
+    "type": "page",
+    "href": "https://darkbot.eu/",
+    "newWindow": true
+  }
   }

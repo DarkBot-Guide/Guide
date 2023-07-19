@@ -1,139 +1,127 @@
-## 1. Windows nie może znaleźć "javaw"
+## 1. System Windows nie może znaleźć „javaw”
 Możliwe przyczyny i potencjalne rozwiązania:
-    1. Nie masz zainstalowanej żadnej wersji javy na swoim komputerze. Wejdź na stronę #Windows, pobierz i zainstaluj Javę 17.
+     1. Nie masz zainstalowanej żadnej wersji Java na swoim komputerze. Przejdź do strony #Windows, pobierz i zainstaluj Javę 17.
 
-    2. Po zainstalowaniu programu java, Twoja ścieżka java nie zaktualizowała się. Spróbuj ponownie zainstalować Javę 17 lub nasz runtime.
+     2. Po zainstalowaniu programu Java ścieżka Java nie została zaktualizowana. Spróbuj ponownie zainstalować Javę 17 lub nasze środowiska wykonawcze.
 
-    ⚠️ Podczas instalacji runtime, pamiętaj, aby NIE zamykać wyskakujących okien Windows Command Prompt i cierpliwie czekać, aż proces instalacji zostanie zakończony. W przeciwnym razie twoja ścieżka java nigdy nie zostanie zaktualizowana!
+     ⚠️ Podczas instalacji środowiska wykonawczego pamiętaj, aby NIE zamykać wyskakujących okienek wiersza polecenia systemu Windows i cierpliwie czekać, aż proces instalacji się zakończy. W przeciwnym razie twoja ścieżka Java nigdy się nie zaktualizuje!
 
-    Jeśli to nie rozwiązało problemu, oto rozwiązanie:
-        1. Krok #1.
-            1. Wyszukaj Zaawansowane ustawienia systemu
-            2. Kliknij na Zmienne środowiskowe...
+     Jeśli to nie rozwiązało problemu, oto rozwiązanie:
+         1. Krok 1
+             1. Wyszukaj Zaawansowane ustawienia systemu
+             2. Kliknij Zmienne środowiskowe...
 
-        2. Krok #2.
-            1. Przejdź do zakładki System Variables (Zmienne systemowe)
-            2. Kliknij na New...
-            3. Nazwa zmiennej: JAVA_HOME
-            4. Wartość zmiennej: C:\Program Files \Java \Jdk1.8.0_XXX (zastąpić znaki X swoją wersją JDK. Przykład: jdk1.8.0_201) lub możesz przeglądać katalog pliku.
-            5. Upewnij się, że to JDK, a nie JRE.
-            6. Kliknij OK.
+         2. Krok 2
+             1. Przejdź do Zmienne systemowe
+             2. Kliknij Nowy...
+             3. Nazwa zmiennej: JAVA_HOME
+             4. Wartość zmiennej: C:\Program Files\Java\jdk1.8.0_XXX (zamień X na swoją wersję JDK. Przykład: jdk1.8.0_201) lub możesz wyszukać katalog pliku.
+             5. Upewnij się, że jest to JDK, a nie JRE
+             6. Kliknij OK
 
-        3. Krok #3.
-            1. Poszukaj ścieżki i kliknij na nią dwukrotnie lub zaznacz i naciśnij Edit
-            2. Usuń wszystkie ścieżki Javy (np. C:\Program Files (x86)\Common Files \Oracle \Java \javapath).
-            3. Kliknij na Nowy...
-            4. Wpisz %JAVA_HOME%bin
-            5. Kliknij OK
+         3. Krok 3
+             1. Wyszukaj ścieżkę i kliknij ją dwukrotnie lub wybierz i naciśnij przycisk Edytuj
+             2. Usuń wszystkie ścieżki Java (np. C:\Program Files (x86)\Common Files\Oracle\Java\javapath)
+             3. Kliknij Nowy...
+             4. Napisz %JAVA_HOME%\bin
+             5. Kliknij OK
 
-![ClassPath1](public/ClassPath1.png)
-![ClassPath2](public/ClassPath2.png)
+![ŚcieżkaKlasy1](public/ŚcieżkaKlasy1.png)
+![ŚcieżkaKlasy2](public/ŚcieżkaKlasy2.png)
 
-## 2. Unable to access jar file DarkBot.jar
+## 2. Nie można uzyskać dostępu do pliku jar DarkBot.jar
 
 Możliwe przyczyny i rozwiązania:
-1. W twoim folderze z botami nie ma pliku o nazwie DarkBot.jar, na przykład dlatego, że zmieniłeś nazwę tego pliku na DarkBot_1.jar
-2. Nie masz zainstalowanej żadnej wersji java na komputerze.
-- Rozwiązanie takie samo jak dla błędu Windows cannot find javaw - przewiń do góry.
-3. Występuje problem z twoją ścieżką java.
-- Rozwiązanie takie samo jak dla błędu Windows cannot find javaw - przewiń do góry.
+1. Na przykład w folderze bota nie ma pliku o nazwie DarkBot.jar, ponieważ nazwa tego pliku została zmieniona na DarkBot_1.jar
+2. Nie masz zainstalowanej żadnej wersji java na komputerze / Wystąpił problem ze ścieżką java.
+- To samo rozwiązanie, co w przypadku systemu Windows nie można znaleźć błędu javaw — przewiń w górę.
+3. Spróbuj użyć RunBot.bat
 
-4. Możesz spróbować użyć RunBot.bat:
+**NIE** uruchamiaj RunBot.bat z uprawnieniami administratora!
 
-- Utwórz plik w swoim folderze Bot. Na przykład: file.properties
-- Umieść swoją nazwę użytkownika i hasło w nowym pliku
-
-![fileProperties](public/fileProperties.png)
-
-Edytuj plik RunBot.bat do tego: START javaw -jar DarkBot.jar -start -login plik.properties
-
-![fileProperties](public/fileProperties.png)
-
-Nie **nie** uruchamiaj RunBot.bat z uprawnieniami administratora!
-
-## 3. DarkBot.jar otwiera się jako folder, archiwizacja lub w innym APP
+## 3. DarkBot.jar otwiera się jako folder, archiwum lub w innej aplikacji
 Możliwe rozwiązanie:
-1. Kliknij prawym przyciskiem myszy DarkBot.jar
-2. Kliknij "Otwórz za pomocą"
-3. Zaznacz "Java TM" i "Zawsze używaj tej aplikacji dla plików .jar"
-4. Kliknij "OK"
-5. Kliknij dwukrotnie DarkBot.jar
+1. Kliknij prawym przyciskiem myszy plik DarkBot.jar
+2. Kliknij „Otwórz za pomocą”
+3. Zaznacz „Java TM” i „Zawsze używaj tej aplikacji do plików .jar”
+4. Kliknij „OK”
+5. Kliknij dwukrotnie plik DarkBot.jar
 
-![toJar1](public/toJar1.png)
+![do Słoika1](publiczny/doSłoika1.png)
 
-![toJar2](public/toJar2.png)
+![do Słoika2](public/doSłoika2.png)
 
-## 4. Native library (com/sun/jna/win32-x86/jnidispatch.dll) not found in resource path [...]
-Powód: Na komputerze masz zainstalowaną 32-bitową wersję java (do uruchomienia bota wymagana jest wersja 64-bitowa).
+## 4. Nie znaleziono biblioteki natywnej (com/sun/jna/win32-x86/jnidispatch.dll) w ścieżce [...]
+Powód: Masz zainstalowaną 32-bitową wersję Java na swoim komputerze (wersja 64-bitowa jest wymagana do uruchomienia bota).
 Rozwiązanie: Postępuj zgodnie z poniższymi instrukcjami:
-1. Kliknij menu start i wpisz appwiz.cpl
-2. Zlokalizuj 32-bitową wersję java i odinstaluj ją z komputera.
-3. Jeśli masz już zainstalowany nasz runtime, przejdź do kroku 4.  Jeśli nie, wejdź na stronę #Windows i pobierz go.
-4. Kliknij dwukrotnie na plik RunBot.bat i sprawdź czy teraz działa.
+1. Kliknij menu Start i wpisz appwiz.cpl
+2. Znajdź 32-bitową wersję Java i odinstaluj ją z komputera
+3. Jeśli masz już zainstalowane nasze środowisko wykonawcze, przejdź do kroku 4. Jeśli nie, przejdź do strony #Windows i pobierz je.
+4. Kliknij dwukrotnie plik RunBot.bat i sprawdź, czy teraz działa.
 
-⚠️ Jeśli wykonałeś wszystkie kroki i otrzymujesz błąd Windows cannot find javaw, spróbuj zainstalować runtime ponownie (to naprawi twoją ścieżkę java). Po instalacji spróbuj uruchomić bota.
+⚠️ Jeśli wykonałeś wszystkie kroki i pojawia się błąd Windows nie może znaleźć javaw, spróbuj ponownie zainstalować środowisko wykonawcze (naprawi to twoją ścieżkę java). Po instalacji spróbuj uruchomić bota.
 
-## 5. Cannot authorize my discord account
+## 5. Nie mogę autoryzować mojego konta na discordzie
 
 Komunikat o błędzie: 127.0.0.1 odmówił połączenia.
-Przyczyny i rozwiązania:
-1. Zamykasz okienko popup z bota (ciemnoszare okienko, które wyskakuje zaraz po uruchomieniu bota) podczas procesu autoryzacji. NIE zamykaj go, ponieważ zawsze będziesz otrzymywał wspomniany błąd.
-2. Przeglądarka, której aktualnie używasz nie jest w stanie załadować strony. Ustaw domyślną przeglądarkę na chrome - tam powinna nastąpić bezproblemowa autoryzacja bota.
-3. Używasz bardzo agresywnego Antywirusa, który nie pozwala przejść procesu autoryzacji - spróbuj go na chwilę wyłączyć.
+Powody i rozwiązania:
+1. Zamykasz wyskakujące okno bota (ciemnoszare okno, które pojawia się zaraz po uruchomieniu bota) podczas procesu autoryzacji. NIE zamykaj go, ponieważ zawsze pojawi się wspomniany błąd.
+2. Przeglądarka, której aktualnie używasz, nie może załadować strony. Ustaw domyślną przeglądarkę na chrome - tam powinieneś bezproblemowo autoryzować bota.
+3. Używasz bardzo agresywnego programu antywirusowego, który nie pozwala przejść procesu autoryzacji - spróbuj go na chwilę wyłączyć.
 
 ## 6. Bot zamyka się po zalogowaniu [FIX]
 
 1. Pobierz i uruchom następujący plik:
 https://darkbot.eu/downloads/FlashFix.bat
 
-2. Alternatywna metoda - TYLKO JEŚLI PIERWSZA SIĘ NIE UDAŁA
+2. Metoda alternatywna — TYLKO W PRZYPADKU NIEPOWODZENIA PIERWSZEJ
 https://darkbot.eu/downloads/flashcn_flashpatch.zip
 
-## 7. Nie można zalogować się do gry - odświeżanie strony logowania lub przekierowanie na stronę wylogowania tuż po kliknięciu przycisku logowania.
+## 7. Brak możliwości zalogowania się do gry - odświeżenie strony logowania lub przekierowanie do strony wylogowania zaraz po kliknięciu przycisku logowania.
 
-Przyczyna: ograniczenia bezpieczeństwa nie pozwalają na ustawienie w przeglądarce plików cookies, które są potrzebne do uzyskania dostępu do strony backpage i uruchomienia gry.
+Przyczyna: ograniczenia bezpieczeństwa nie pozwalają na ustawienie w przeglądarce plików cookie, które są potrzebne do uzyskania dostępu do backpage'a i uruchomienia gry.
 
-Rozwiązanie: dla każdego systemu operacyjnego Windows Server:
- 1. Otwórz zakładkę "Server Manager
- 2. Przejdź do Local Server
- 3. Znajdź i wyłącz konfigurację IE Enhanced Security
- 4. Zamknij wszystkie okna i sprawdź czy możesz się zalogować do gry.
-⚠️ Pamiętaj o ponownym uruchomieniu bota, aby zastosować zmiany!
+Rozwiązanie: dla dowolnego systemu operacyjnego Windows Server:
+  1. Otwórz zakładkę Menedżer serwera
+  2. Przejdź do opcji Serwer lokalny
+  3. Znajdź i wyłącz konfigurację rozszerzonych zabezpieczeń IE
+  4. Zamknij wszystkie okna i sprawdź, czy możesz zalogować się do gry.
+⚠️ Pamiętaj, aby ponownie uruchomić bota, aby zastosować zmiany!
 
-⬇️ Jeśli z jakichś powodów nie jesteś w stanie go wyłączyć, wykonaj dalsze kroki.
+⬇️ Jeśli z jakichś powodów nie możesz go wyłączyć, postępuj zgodnie z dalszymi krokami.
 
 Rozwiązanie: dla wszystkich systemów operacyjnych:
- 1. kliknij menu start, wpisz inetcpl.cpl i naciśnij enter
- 2. przejdź do zabezpieczeń, kliknij zaufane witryny i dodaj *.darkorbit.com do zaufanych witryn
- 3. zamknij wszystkie okna i teraz spróbuj zalogować się do gry
- ⚠️ Pamiętaj, aby zrestartować bota, aby zastosować zmiany!
+  1. kliknij menu start, wpisz inetcpl.cpl i naciśnij enter
+  2. przejdź do bezpieczeństwa, kliknij zaufane witryny i dodaj *.darkorbit.com do zaufanych witryn
+  3. zamknij wszystkie okna i teraz spróbuj zalogować się do gry
+  ⚠️ Pamiętaj, aby ponownie uruchomić bota, aby zastosować zmiany!
 
-Jeśli to nie pomoże i nadal będziesz miał ten sam problem, spróbuj zmniejszyć poziom zabezpieczeń dla strefy internetowej (inetcpl.cpl => security -> internet, ustaw na medium lub low)
+Jeśli to nie pomoże i nadal występuje ten sam problem, spróbuj zmniejszyć poziom bezpieczeństwa dla strefy internetowej (inetcpl.cpl => bezpieczeństwo -> internet, ustaw średni lub niski).
 
-## 8. Wybrane API nie jest w stanie się załadować
+## 8. Nie można załadować wybranego interfejsu API
 
-❌ Komunikat o błędzie: Wybrany interfejs API nie może zostać załadowany. Prawdopodobnie nie masz wymaganej biblioteki DLL w swoim folderze lib.
+❌ Komunikat o błędzie: Nie można załadować wybranego interfejsu API. Prawdopodobnie nie masz wymaganej biblioteki DLL w folderze lib.
 Możliwe przyczyny i rozwiązania:
 
-1. Na komputerze masz zainstalowaną 32-bitową wersję javy - przeinstaluj Javę lub nasze Runtimes.
+1. Masz zainstalowaną 32-bitową wersję Java na swoim komputerze - zainstaluj ponownie Javę lub nasze środowisko wykonawcze.
 
-2. Twoja bezwzględna (pełna) ścieżka do pliku DarkBot.jar zawiera jeden lub więcej znaków narodowych (takich jak ğ, Ş ı itp.), które nie mogą być prawidłowo rozpoznane i są zamieniane na znaki zapytania.
+2. Twoja bezwzględna (pełna) ścieżka do pliku DarkBot.jar zawiera jeden lub więcej znaków narodowych (takich jak ğ, Ş ı itp.), które nie mogą zostać poprawnie rozpoznane i są zamieniane na znaki zapytania.
 Na przykład:
-Następująca ścieżka:
-Zostanie przekonwertowana na: C:users\u0026apos; c?\u0026apos; Darkbot\u0026apos;.
+Następująca ścieżka: C:\users\kullanıcı\Desktop\Darkbot\lib
+Zostanie przekonwertowany do: C:\users\kullan?c?\Desktop\Darkbot\lib
 
-🔹 Tak więc przekonwertowana ścieżka wskazuje na nieprawidłową lokalizację, w której nie można znaleźć wymaganego pliku .dll i to jest przyczyną tego błędu.
+🔹 Tak więc przekonwertowana ścieżka wskazuje nieprawidłową lokalizację, w której nie można znaleźć wymaganego pliku .dll i to jest przyczyna tego błędu.
 
-Rozwiązanie: Pozbądź się wszystkich znaków narodowych ze swojej ścieżki, zmieniając nazwę wszystkich katalogów, w których one występują. Jeśli rzeczywista nazwa użytkownika na Twoim komputerze zawiera wspomniane znaki (jak w powyższym przykładzie) i nie chcesz zawracać sobie głowy zmianą nazwy, możesz po prostu przenieść folder z botem na dowolną partycję (Na przykład na dysk C:\u200) i tam go uruchomić.
-
+Rozwiązanie: Pozbądź się wszystkich znaków narodowych ze swojej ścieżki, zmieniając nazwy wszystkich katalogów, w których występują. Jeśli rzeczywista nazwa użytkownika na twoim komputerze zawiera wspomniane znaki (jak w powyższym przykładzie) i nie chcesz zawracać sobie głowy zmianą jej nazwy, możesz po prostu przenieść folder bota na dowolną partycję (na przykład na dysk C:\ ) i uruchom go tam.
+ 
 3. Bot ładuje grę w nieskończoność po odświeżeniu
 
-Rozwiązanie: Wyczyść cache i zrestartuj bota.
+Rozwiązanie: Wyczyść pamięć podręczną i uruchom ponownie bota.
 
-## 9. Failed to load config
+## 9. Nie udało się załadować konfiguracji
 
-To się dzieje, jeśli próbujesz uruchomić bota z Javą 8. Jeśli nie jesteś donatorem, wykonaj poniższe instrukcje.
+Dzieje się tak, jeśli spróbujesz uruchomić bota z Javą 8. Jeśli nie jesteś dawcą, postępuj zgodnie z poniższymi instrukcjami.
 
-1. Kliknij menu Start, wpisz appwiz.cpl i naciśnij Enter
+1. Kliknij Menu Start, wpisz appwiz.cpl i naciśnij Enter
 2. Wyszukaj Java 8 i odinstaluj ją
-3. Pobierz i zainstaluj nasz runtime: https://darkbot.eu/downloads/Runtimes4DarkBot.exe, a następnie ponownie uruchom bota.
+3. Pobierz i zainstaluj nasze środowisko wykonawcze: https://darkbot.eu/downloads/Runtimes4DarkBot.exe, a następnie ponownie uruchom bota.

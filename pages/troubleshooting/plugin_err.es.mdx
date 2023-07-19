@@ -1,0 +1,73 @@
+## 1. El complemento cargado no aparece en la pestaña de complementos
+
+  1. Asegúrese de colocar el complemento en una carpeta adecuada. Todos los complementos deben colocarse en la carpeta llamada 'complementos'.
+  2. Si cargó el complemento mientras se ejecutaba el bot, haga clic en el icono de recarga (ubicado en la esquina superior derecha del panel de configuración) o reinicie el bot.
+ 
+## 2. El complemento no funciona y su fondo en la pestaña de complementos es rojo
+
+  Mensajes de error y soluciones:
+  
+❌ Se requiere actualización de bot
+
+   Causa: cargó un complemento que fue diseñado para una versión de bot adicional a la que realmente está usando
+  
+   Soluciones:
+   1. Elimine el complemento de su carpeta de complementos y obtenga una versión anterior de este complemento.
+   2. Actualice el bot a la versión compatible con este complemento o simplemente actualice a la última
+
+❌ Firma inválida
+
+Posibles causas y soluciones:
+1. Los servidores de GitHub están inactivos temporalmente y no es posible verificar una firma del complemento. Antes de continuar, verifique el estado de los servidores de GitHub (https://www.githubstatus.com/). Si este es el caso, solo espere pacientemente hasta que arreglen sus servidores.
+2. Cargó un complemento que proviene de una fuente no confiable: alguien se lo envió o lo encuentra en algún lugar de la web. ¡Es mejor no usar estos complementos!
+3. Su IP ha sido bloqueada por los servidores de GitHub o su proveedor de Internet le restringió el acceso a las páginas de GitHub. Conéctese a Internet desde otra IP, por ejemplo, comparta una conexión a Internet usando su teléfono o use un proxy.
+
+❌ Al complemento le falta un plugin.json en la raíz jar
+
+Motivo: Pones el archivo .jar que no es realmente un complemento para el bot. Puede eliminarlo de la carpeta de complementos, ya que no podrá usarlo.
+ 
+**🛠️ El fondo del complemento es verde, pero algunas funciones no funcionan**
+  
+❌ Error al cargar
+
+Posibles causas y soluciones:
+   1. La función no se pudo cargar correctamente. Intente hacer clic en el icono de recarga o reinicie el bot
+   2. Cargó dos (o más) versiones diferentes (o iguales) del mismo complemento en su bot. Si este es el caso, cierre el bot y elimine todas las duplicaciones de la carpeta de complementos.
+  
+❌ No se pudo marcar
+
+Soluciones posibles:
+   1. Intente recargar complementos o reiniciar el bot
+   2. Deshabilite todas las demás funciones de complementos innecesarios desde la pestaña de complementos, luego reinicie el bot.
+   3. Pruebe la versión de complemento más antigua/nueva o use la versión de bot más antigua, ya que es posible que los complementos más antiguos no funcionen correctamente en los más nuevos.
+
+## 3. Se marcó la casilla de verificación junto a la función, pero no puede hacer clic en el ícono de ajustes para configurarla
+
+Motivo: La función habilitada es un módulo [M] que primero debe elegirse en la selección de módulos.
+
+Solución:
+
+1. Vaya a Configuración general y selecciónelo, luego regrese y verifique si puede acceder a la configuración.
+2. De lo contrario, vuelva a Configuración general y desplácese hacia abajo hasta el final. La sección de configuración para este módulo debería estar allí.
+ 
+## 4. La función kamikaze de kekka no funciona
+ 
+🔹 El bot no dispara a los extraterrestres en la puerta, solo huye de ellos
+
+Posibles causas y soluciones:
+   1. No especificó un número del P.E.T. módulo kamikaze o el número que proporcionó no es adecuado para la posición del módulo kami en la selección del módulo de mascotas en el juego.
+   2. No configuraste correctamente el escudo y el rango de HP.
+   3. El HP de tu nave o el nivel de escudo es demasiado bajo para usar kami, por ejemplo, porque tu nave no puede llenarlo, ya que es demasiado lenta y constantemente es atacada por alienígenas. También. Asegúrate de no configurar la polilla o la rueda como formación utilizada para lanzar mascotas kamikaze, ya que están disminuyendo constantemente el nivel de tus escudos.
+  
+🔹 El bot solo dispara a extraterrestres y no usa kamikaze
+
+  Posibles causas y soluciones:
+   1. No habilitó ni configuró la función kamikaze en la sección de configuración de kekka.
+   2. No especificaste en qué PNJ debería usarse el kamikaze. Para hacerlo, ve a la tabla de NPC, haz clic con el botón izquierdo en el campo de la columna adicional y agrega las banderas correspondientes a los alienígenas que quieras convertir en kami.
+   3. Está utilizando Kekka Reloaded 1.1.8 donde la función kami está rota. Utilice Kekka Reloaded 1.0.4 en su lugar. Vaya al canal de complementos y desplácese hacia arriba. Lo encontrarás allí.
+  
+🔹 El bot elige el módulo kamikaze, pero P.E.T. se comporta como en modo guardia
+
+  Posibles causas y soluciones:
+
+   1. El HP del P.E.T es demasiado alto para encenderlo (debe ser inferior al 10%).

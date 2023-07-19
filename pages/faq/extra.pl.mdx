@@ -1,0 +1,53 @@
+## 1. Priorytet NPC (to samo dla skrzynek)
+
+1. Przykład nr 1
+```bash
+Priorytet A -5
+B 0 Priorytet
+```
+Idzie na A jako pierwszy
+
+2. Przykład nr 2
+```bash
+Priorytet 2
+B-6 Priorytet
+```
+Najpierw idzie na B
+
+3. Przykład nr 3
+```bash
+Priorytet 0
+B -20 Priorytet (Pojawia się po chwili w zasięgu wzroku)
+```
+Idzie do B
+ 
+Ale w tym przypadku, nawet jeśli Bot strzela teraz do A z 50% zdrowia i B pojawia się w zasięgu wzroku, przestanie strzelać do A i przesunie się do B
+Jeśli różnica priorytetów jest jak 20 priorytetów poniżej innych, jeden będzie zawsze preferowany bez względu na to, co strzela Bot
+
+4. Przykład nr 4
+```bash
+Priorytet 15
+B 0 Priorytet
+```
+Ten trochę skomplikowany/podstępny
+Jeśli A ma mniej niż 50% ▼ HP, kontynuuj zabijanie go, jeśli powyżej 50% ▲ HP, zabij B.
+
+Tutaj więcej informacji na ten temat (dzięki Punice):
+1. NPC, który jest obecnie zablokowany i ma pełne HP, otrzymuje 10 dodatkowych priorytetów.
+2. Następnie każde brakujące 10% HP zablokowanego NPC daje 1 dodatkowy priorytet.
+ 
+Przykład:
+```bash
+Zablokowany NPC z 50% HP daje 15 dodatkowych priorytetów.
+Zablokowany NPC z dodatkowym priorytetem 20% HP 18.
+```
+
+## 2. Jak uruchomić wiele botów?
+
+1. Zduplikuj folder bota i zmień jego nazwę, jeśli chcesz
+
+![multipleBots](public/multipleBots1.png)
+
+2. Uruchom je.
+
+![multipleBots](public/multipleBots2.png)

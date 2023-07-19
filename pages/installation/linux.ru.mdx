@@ -1,0 +1,47 @@
+# Как установить и запустить DarkBot в Linux?
+
+## 1. Установка DarkBot на свой ПК
+1. создайте нового пользователя (не используйте «root»);
+2. откройте терминал, скопируйте и вставьте эту команду и нажмите ENTER:
+`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_desktop.sh`
+
+![linux1](public/linux1.png)
+
+## 2. Установка DarkBot на VPS
+1. скачайте PuTTy или любое подобное приложение и подключитесь к VPS;
+
+`Ссылка на PuTTy:` https://www.putty.org/
+
+2. создайте нового пользователя (не используйте «root»);
+3. откройте терминал, скопируйте и вставьте эту команду и нажмите ENTER:
+`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_vps.sh`
+4. Когда закончится установка, закройте терминал и подключитесь к VPS через подключение к удаленному рабочему столу (RDP).
+
+## 3. Как запустить DarkBot?
+
+Откройте терминал и введите следующую команду:
+```bash
+cd Downloads/darkbot && java -jar DarkBot.jar
+```
+
+![linux2](public/linux2.png)
+
+## 4. Устранение неполадок
+1. Если бот запрашивает подтверждение, откройте браузер вручную, перейдите по адресу http://localhost:55230/ и авторизуйте свою учетную запись Discord.
+2. Если API не загружается, установите для API значение tanos_api в настройках бота или удалите файлы конфигурации из папки бота, а затем повторите попытку.
+3. unknown command wget
+- sudo yum install wget
+4. unknown command unzip
+- sudo yum install uzip
+5. AppImages require FUSE to run.
+- sudo apt install fuse -y && sudo apt install libfuse2 -y
+
+## 5. FAQ
+1. install_desktop.sh
+- обновляет систему и устанавливает java 17;
+- загружает darkbot.zip и распаковывает все файлы, а затем удаляет архивы.
+
+2. install_vps.sh это:
+- обновляет систему и устанавливает java 17;
+- устанавливает и настраивает GUI и xRDP;
+- загружает darkbot.zip и распаковывает все файлы, а затем удаляет архивы.

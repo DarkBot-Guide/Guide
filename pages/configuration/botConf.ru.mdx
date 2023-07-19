@@ -1,0 +1,25 @@
+## 1. Как сделать автозапуск бота?
+
+Откройте папку с вашим ботом и создайте два файла: *runbot.bat* и *file.properties*.
+
+1. В *file.properties* пропишите логин, логин и мастер-пароль (если есть).
+
+![fileProperties](public/fileProperties.png)
+
+2. В *runbot.bat* пропишите следующую команду:
+
+```bash
+START javaw -jar DarkBot.jar -start -login file.properties
+```
+
+![RunBot](public/RunBot1.png)
+
+Если вы хотите запустить бота с определенной конфигурацией, добавьте:
+
+```bash
+-config config_name
+```
+
+Итак, после всех изменений это должно выглядеть так:
+
+![RunBot](public/RunBot2.png)

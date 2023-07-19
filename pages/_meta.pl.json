@@ -1,9 +1,10 @@
 {
-  "index": "Wstęp",
-  "supportedos": "Wspierane systemy operacyjne",
+  "index": "Wprowadzenie",
   "installation": "Instalacja",
-  "troubleshooting": "Rozwiązywanie problemów",
   "configuration": "Konfiguracja",
+  "donors": "Rola dawcy",
+  "faq": "FAQ",
+  "troubleshooting": "Rozwiązywanie problemów",
   "about": {
     "title": "O nas",
     "type": "page"

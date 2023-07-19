@@ -1,3 +1,5 @@
 {
-  "botConf": "Konfiguracja Bota"
+    "botConf": "Konfiguracja bota",
+    "pluginsConf": "Konfiguracja wtyczek",
+    "tutorials": "samouczki"
 }

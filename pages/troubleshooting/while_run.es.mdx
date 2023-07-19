@@ -1,0 +1,76 @@
+## 1. El binario Java(TM) Platform SE ha dejado de funcionar
+
+⚠️ Si está utilizando un sistema operativo antiguo (por ejemplo, Windows Server 2012), debe saber que este problema (y no solo este) es común en estos sistemas operativos. Si se enfrenta constantemente al problema del bloqueo de Java, considere cambiar a uno de los sistemas operativos admitidos, que se enumeran en #Sistemas operativos admitidos.
+
+🔸 Posibles causas:
+   1. Hay un conflicto con otro programa o una tarea que se ejecuta en segundo plano.
+   2. Mal estado del sistema.
+   1. un software de overclocking.
+
+🔸 Posibles soluciones:
+   1. Realice un inicio limpio en su sistema (búsquelo en Google si no sabe cómo hacerlo).
+   2. Actualice su controlador de video (es una solución de la página web oficial de Java).
+   3. Limpia tu PC con CCleaner.
+   4. Desinstale todas las versiones de Java de su PC, luego instale Java 17.
+   5. Si tiene **MSI afterburner** o **Rivatuner**, asegúrese de desactivarlos.
+
+## 2. El bot no puede saltar a través del puerto
+
+  Asegúrate de eso:
+   1. El área del puerto no está marcada como zona evitada
+   2. la tecla de salto asignada en la configuración del teclado del juego es igual a 'J'
+
+  Si lo configura correctamente, verifique si puede usar el puerto manualmente. Si no puedes, entonces:
+   1. Podría ser una desincronización del juego. Intenta mover tu nave manualmente y después de un momento, ejecuta el bot. Si quieres, también puedes intentar recargar el cliente del juego o reiniciar el bot.
+   2. Es un error del juego (ocurre muy raramente). La única forma de deshacerse de él es dejar que otro jugador destruya tu nave. Después de revivir todo debería funcionar correctamente.
+
+## 3. El bot se queda atascado en la ventana de muerte sin ninguna opción de revivir.
+
+Razón y soluciones: configuró el bot para revivir en el puerto/en el lugar, pero no configuró el tiempo de espera antes de revivir correctamente.
+   1. Si configura el bot para que reviva en el puerto, configure el tiempo de espera en 25 segundos.
+   2. Si la ubicación de reactivación está configurada como punto fijo, configúrela en 55 segundos
+
+⚠️ NO configure el tiempo de espera antes de revivir en un valor superior a 60, porque después de la muerte puede desconectarse del juego.
+
+## 4. El bot se atascó en el puerto o se recargó cada 90 segundos
+
+CONSEJO: Antes de continuar, lea el estado actual del bot (lo encontrará en la esquina superior izquierda del panel principal del bot [el que tiene el mapa]). Le ayudará a encontrar una causa real y una solución para el problema.
+ 
+Posibles Causas:
+   1. El bot está esperando a que se repare la nave, pero no equipaste tu nave con una CPU de reparación automática.
+   2. El bot está esperando hasta que los escudos se llenen, pero como tu formación de reparación, elegiste la que disminuye constantemente el nivel de tus escudos (como la formación de Polilla o Rueda).
+   3. Un enemigo apuntó y atacó tu nave y la opción de recordar enemigos durante un tiempo determinado está habilitada (por defecto está configurada en 300).
+
+## 5. El bot no dispara, ignora por completo a todos los NPC en el mapa
+
+Asegúrate de eso:
+1. El módulo seleccionado en la configuración del bot permite que el bot mate NPC, por ejemplo, NPC killer o Kill & Collect (configuración -> 'General')
+2. Los NPC que deberían ser asesinados han sido marcados en la tabla con NPC (configuración -> sección de configuración para 'Asesino de NPC')
+3. La opción Solo matar NPC en el área preferida está deshabilitada (configuración -> 'Roaming y comportamiento del área preferida')
+
+## 6. El bot está tratando de matar a NPC, pero no está disparando, simplemente dando vueltas.
+
+  Posibles causas y soluciones:
+   1. La tecla de ataque asignada en la configuración del bot podría no ser adecuada para la tecla en la barra de tragamonedas del juego, donde guardas tus municiones. Antes de continuar, asegúrese
+  lo configuraste bien!
+   2. No habilitó las siguientes opciones en la configuración del juego (sección de juego):
+      -> Haga doble clic para lanzar el ataque,
+      -> Iniciar y detener ataques usando la barra de acceso directo.
+   3. Las combinaciones de teclas en la configuración del teclado del juego se han restablecido o estás usando teclas que el bot no puede reconocer (como teclas funcionales [F1-F12, ALT, ENTER] y los números del teclado numérico [como número 0, número 1, etc.]).
+   Abra la configuración del juego, vaya al teclado y configure las combinaciones de teclas usando los números o caracteres del teclado estándar.
+
+  ⚠️ Si quieres usar caracteres en lugar de números, recuerda NO ASIGNAR las teclas 'J' y 'C', porque la primera la usa el bot para saltar por los puertos, y la segunda, para cambiar de nave configuración.
+
+## 7. El bot cancela constantemente y reanuda el ataque a NPC
+
+Posibles causas y soluciones:
+     1. La llave donde guardas tus municiones ha sido asignada en algún lugar de la configuración del bot, por ejemplo, en el campo para una llave de habilidad ofensiva o como llave de formación. Asegúrate de configurar todo correctamente.
+     2. El bot no puede detectar si tu nave está disparando o no. Podría suceder si te quedas sin cohetes (incluso si no los usas). Compre los cohetes o intente cambiar el tipo de cohetes.
+
+## 8. El bot no puede volver a conectarse o se lanza a la página de inicio de sesión
+
+  Causa: su SID es KO (caducado).
+
+  Solución: no inicie sesión en el juego desde el navegador mientras se ejecuta el bot.
+ 
+  ✅ Si realmente necesita acceder a la página trasera mientras se ejecuta el bot, use *KaiserDJ Client* o *Botón de inicio*.

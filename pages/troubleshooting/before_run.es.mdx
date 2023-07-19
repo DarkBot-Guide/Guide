@@ -1,0 +1,127 @@
+## 1. Windows no puede encontrar "javaw"
+Posibles causas y posibles soluciones:
+     1. No tienes ninguna versión de Java instalada en tu PC. Vaya a la página de #Windows, descargue e instale Java 17.
+
+     2. Después de instalar el programa java, su ruta java no se actualizó. Intente reinstalar Java 17 o nuestros tiempos de ejecución.
+
+     ⚠️ Mientras instala el tiempo de ejecución, recuerde NO cerrar las ventanas emergentes del símbolo del sistema de Windows y espere pacientemente hasta que finalice el proceso de instalación. ¡De lo contrario, su ruta de Java nunca se actualizará!
+
+     Si no resolvió el problema, aquí hay una solución:
+         1. Paso #1
+             1. Buscar configuración avanzada del sistema
+             2. Haga clic en Variables de entorno...
+
+         2. Paso #2
+             1. Vaya a Variables del sistema
+             2. Haga clic en Nuevo...
+             3. Nombre de la variable: JAVA_HOME
+             4. Valor de la variable: C:\Program Files\Java\jdk1.8.0_XXX (reemplace las X con su versión de JDK. Ejemplo: jdk1.8.0_201) o puede buscar el directorio del archivo.
+             5. Asegúrate de que sea JDK y no JRE
+             6. Haga clic en Aceptar
+
+         3. Paso #3
+             1. Busque Ruta y haga doble clic en ella o seleccione y presione Editar
+             2. Elimine todas las rutas de Java (como C:\Program Files (x86)\Common Files\Oracle\Java\javapath)
+             3. Haga clic en Nuevo...
+             4. Escriba %JAVA_HOME%\bin
+             5. Haga clic en Aceptar
+
+![RutaClase1](público/RutaClase1.png)
+![RutaClase2](público/RutaClase2.png)
+
+## 2. No se puede acceder al archivo jar DarkBot.jar
+
+Posibles causas y soluciones:
+1. No hay ningún archivo llamado DarkBot.jar en su carpeta de bot, por ejemplo, porque cambió el nombre de este archivo a DarkBot_1.jar
+2. No tiene ninguna versión de Java instalada en la PC / Hay un problema con su ruta de Java.
+- La misma solución que para Windows no puede encontrar el error javaw: desplácese hacia arriba.
+3. Intenta usar RunBot.bat
+
+¡**NO** ejecute RunBot.bat con privilegios de administrador!
+
+## 3. DarkBot.jar se abre como carpeta, archivo o en otra aplicación
+Solución posible:
+1. Haga clic derecho en DarkBot.jar
+2. Haga clic en "Abrir con"
+3. Marque "Java TM" y "Usar siempre esta aplicación para archivos .jar"
+4. Haga clic en "Aceptar"
+5. Haga doble clic en DarkBot.jar
+
+![aJar1](público/aJar1.png)
+
+![aJar2](público/aJar2.png)
+
+## 4. Biblioteca nativa (com/sun/jna/win32-x86/jnidispatch.dll) no encontrada en la ruta del recurso [...]
+Motivo: tiene una versión de Java de 32 bits instalada en su PC (se requiere una versión de 64 bits para ejecutar el bot).
+Solución: Siga las instrucciones a continuación:
+1. Haga clic en el menú Inicio y escriba appwiz.cpl
+2. Busque una versión de Java de 32 bits y desinstálela de su PC
+3. Si ya instaló nuestro tiempo de ejecución, vaya al paso 4. Si no, vaya a la página de #Windows y descárguelo.
+4. Haga doble clic en el archivo RunBot.bat y compruebe si funciona ahora.
+
+⚠️ Si ha realizado todos los pasos y obtiene un error de Windows no puede encontrar javaw, intente instalar el tiempo de ejecución nuevamente (arreglará su ruta de Java). Después de la instalación, intente ejecutar el bot.
+
+## 5. No puedo autorizar mi cuenta de Discord
+
+Mensaje de error: 127.0.0.1 se negó a conectarse.
+Razones y soluciones:
+1. Está cerrando la ventana emergente del bot (una ventana gris oscuro que aparece justo después de ejecutar el bot) durante el proceso de autorización. NO lo cierre, ya que siempre obtendrá el error mencionado.
+2. El navegador que está utilizando actualmente no puede cargar la página. Configure el navegador predeterminado en Chrome; allí debe autorizar el bot sin problemas.
+3. Está utilizando un antivirus muy agresivo que no le permite pasar el proceso de autorización; intente desactivarlo por un momento.
+
+## 6. El bot se cierra después de iniciar sesión [FIX]
+
+1. Descargue y ejecute el siguiente archivo:
+https://darkbot.eu/downloads/FlashFix.bat
+
+2. Método alternativo: SÓLO SI FALLA EL PRIMERO
+https://darkbot.eu/downloads/flashcn_flashpatch.zip
+
+## 7. No se puede iniciar sesión en el juego: actualizar la página de inicio de sesión o redirigir a la página de cierre de sesión justo después de hacer clic en el botón de inicio de sesión.
+
+Causa: las restricciones de seguridad no permiten establecer cookies en el navegador, que son necesarias para acceder a la página trasera y ejecutar el juego.
+
+Solución: para cualquier sistema operativo Windows Server:
+  1. Abra la pestaña Administrador del servidor
+  2. Navegue al servidor local
+  3. Busque y deshabilite la configuración de seguridad mejorada de IE
+  4. Cierra todas las ventanas y comprueba si puedes iniciar sesión en el juego.
+⚠️ ¡Recuerda reiniciar el bot para aplicar los cambios!
+
+⬇️ Si por alguna razón no puede apagarlo, siga los pasos siguientes.
+
+Solución: para todos los sistemas operativos:
+  1. haga clic en menú inicio, escriba inetcpl.cpl y presione enter
+  2. vaya a seguridad, haga clic en sitios de confianza y agregue *.darkorbit.com a los sitios de confianza
+  3. cierra todas las ventanas y ahora, intenta iniciar sesión en el juego
+  ⚠️ ¡Recuerda reiniciar el bot para aplicar los cambios!
+
+Si no ayuda y aún enfrenta el mismo problema, intente disminuir el nivel de seguridad para la zona de Internet (inetcpl.cpl => seguridad -> Internet, configúrelo en medio o bajo).
+
+## 8. La API que había seleccionado no puede cargar
+
+❌ Mensaje de error: la API que había seleccionado no se puede cargar. Probablemente no tenga la DLL requerida en su carpeta lib.
+Posibles causas y soluciones:
+
+1. Tiene una versión de Java de 32 bits instalada en su PC: reinstale Java o nuestros tiempos de ejecución.
+
+2. Su ruta absoluta (completa) al archivo DarkBot.jar contiene uno o más caracteres nacionales (como ğ, Ş ı, etc.) que no se pueden reconocer correctamente y se convierten en signos de interrogación.
+Por ejemplo:
+La siguiente ruta: C:\users\kullanıcı\Desktop\Darkbot\lib
+Se convertirá a: C:\users\kullan?c?\Desktop\Darkbot\lib
+
+🔹 Entonces, la ruta convertida apunta a una ubicación no válida, donde no se puede encontrar el archivo .dll requerido y esa es la razón de este error.
+
+Solución: Deshágase de todos los caracteres nacionales de su ruta cambiando el nombre de todos los directorios donde aparecen. Si el nombre real del usuario en su computadora contiene los caracteres mencionados (como en el ejemplo anterior) y no quiere molestarse en cambiarle el nombre, simplemente puede mover la carpeta del bot a cualquier partición (por ejemplo, al disco C:\ ) y ejecutarlo allí.
+ 
+3. El bot está cargando el juego para siempre después de actualizar
+
+Solución: borre el caché y reinicie el bot.
+
+## 9. Error al cargar la configuración
+
+Esto sucede si intenta ejecutar el bot con Java 8. Si no es donante, siga las instrucciones a continuación.
+
+1. Haga clic en Menú Inicio, escriba appwiz.cpl y presione Entrar
+2. Busque Java 8 y desinstálelo
+3. Descargue e instale nuestro tiempo de ejecución: https://darkbot.eu/downloads/Runtimes4DarkBot.exe, luego vuelva a ejecutar el bot.
