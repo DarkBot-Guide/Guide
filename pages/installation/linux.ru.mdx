@@ -3,7 +3,7 @@
 ## 1. Установка DarkBot на свой ПК
 1. создайте нового пользователя (не используйте «root»);
 2. откройте терминал, скопируйте и вставьте эту команду и нажмите ENTER:
-`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_desktop.sh`
+`curl https://raw.githubusercontent.com/0dayYakuza/darkbot_linux/main/install_desktop.sh | bash`
 
 ![linux1](public/linux1.png)
 
@@ -14,7 +14,7 @@
 
 2. создайте нового пользователя (не используйте «root»);
 3. откройте терминал, скопируйте и вставьте эту команду и нажмите ENTER:
-`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_vps.sh`
+`curl https://raw.githubusercontent.com/0dayYakuza/darkbot_linux/main/install_vps.sh | bash`
 4. Когда закончится установка, закройте терминал и подключитесь к VPS через подключение к удаленному рабочему столу (RDP).
 
 ## 3. Как запустить DarkBot?
@@ -35,6 +35,8 @@ cd Downloads/darkbot && java -jar DarkBot.jar
 - sudo yum install uzip
 5. AppImages require FUSE to run.
 - sudo apt install fuse -y && sudo apt install libfuse2 -y
+6. cURL not found/installed
+- sudo apt install curl -y
 
 ## 5. FAQ
 1. install_desktop.sh
