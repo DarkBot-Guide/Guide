@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { Steps } from 'nextra/components'
 
 const config: DocsThemeConfig = {
   logo: <span>DarkBot Guide</span>,
