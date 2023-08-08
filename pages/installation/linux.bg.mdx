@@ -1,0 +1,45 @@
+# Как да инсталирате и подкарате Darkbot на Linux ?
+
+## 1. Инсталиране на  DarkBot на вашия компютър
+1. направете нов потребител (не използвайте "root");
+2. отворете terminal,  копирайте и поставате тази команда и натиснете еnter :
+`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_desktop.sh`
+
+## 2. Инсталиране на  DarkBot on VPS
+1. Изтеглете PuTTy или някое подобно приложение и се свържете с вашия VPS;
+
+`Линк за PuTTy :` https://www.putty.org/
+
+2. направете нов потребител (не използвайте "root");
+3. отворете terminal,  копирайте и поставате тази команда и натиснете еnter :
+`wget -P Downloads https://github.com/0dayYakuza/darkbot_linux/archive/refs/heads/main.zip && cd Downloads && unzip main.zip && cd darkbot_linux-main && sh install_vps.sh`
+4. Когато инсталацията свърши затворете терминала и се свържете с вашия VPS като използват Remote Desktop Connection (RDP).
+
+## 3. Как да подкараме DarkBot?
+
+Отворете terminal и напишете следната команда:
+```bash
+cd Downloads/darkbot && java -jar DarkBot.jar
+```
+
+## 4. Отстраняване на неизправности
+1. Ако бота иска да проверка за потвърждение , отворете браузър и отидете на следния адрес http://localhost:55230/ и след това ауторизирайте важия дискорд акаунт .
+2. Ако API не успее да тръгне избере API към tanos_api от настрйките на бота или изтрийте config файловете от папката на бота и се опитайте отново.
+
+3. непозната команда wget
+- sudo yum install wget
+4. непозната команда unzip
+- sudo yum install uzip
+5. AppImages Изисква  FUSE за да работи .
+- sudo apt install fuse -y && sudo apt install libfuse2 -y
+
+## 5. Въпроси и отговори
+
+1. Какво install_desktop.sh ?
+- Ъпдейтва операционната система и инсталира java 17;
+- тегли darkbot.zip , като после отваря всички файлове и трие архивите.
+
+2. Какво е install_vps.sh ? : 
+- Ъпдейтва операционната система и инсталира java 17;
+- Инсталира и настройва  GUI и  xRDP;
+ тегли darkbot.zip , като после отваря всички файлове и трие архивите.

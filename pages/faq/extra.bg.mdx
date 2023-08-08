@@ -12,42 +12,42 @@ B 0 Приоритет
 A 2 Приоритет
 B -6 Приоритет
 ```
-Отива в B първо
+Отива към B първо
 
 3. Пример #3
 ```bash 
-A 0 Priority
-B -20 Priority (Appears after a while in Sight)
+A 0 Приоритет
+B -20 Приоритет (Появява се след известно време когато е видим)
 ```
-Goes for B
+Отива към В
  
-But in this case even if Bot is shooting right now A with 50% Health left and B appears in sight it will stop shooting A and move to B
-If priority difference is like 20 priorities bellow from others that one will be Always preferred no matter what Bot is shooting
+В този случай ако бота стреля по А и е с 50% живот останал и се появи В в обхват , той ще спре да стреля по А и ще се премести към Б.
+If Приоритет difference is like 20 priorities bellow from others that one will be Always preferred no matter what Bot is shooting
 
 4. Пример #4
 ```bash
-A 15 Priority
-B 0 Priority
+A 15 Приоритет
+B 0 Приоритет
 ```
-This one kinda complicated/tricky
-If A has less than 50%▼ HP continue killing it else above 50%▲ HP go kill B.
+Това е сложно / объркващо 
+Ако А има по-малко от 50 % живот ще продължи да го убива иначе ако е с повече от 50% ще отиде към Б 
 
-Here more Information about that (thanks to Punika):
-1. NPC that is currently Locked and have Full HP getting 10 Extra Priority.
-2. Then every Missing 10% HP of Locked NPC give 1 Extra Priority.
+Още информация относно това ( Благодарение на Punika ):
+1. NPC което в момента е заключено и има пълен живот получава бонус 10 приоритет.
+2. Тогава с всеки липсващи 10% живот от заключеното npc получава 1 бонус приоритет.
  
 Пример:
 ```bash
-Locked NPC with 50% HP gives 15 Extra Priority.
-Locked NPC with 20% HP 18 Extra Priority.
+Заключено NPC с 50% живот получава бонус 15 приоритет.
+Заключено NPC с 20 % живот получава бонус 18 приоритет.
 ```
 
-## 2. How to run multiple bots?
+## 2. Как да пуснем няколко бота ?
 
-1. Duplicate your bot folder and rename it if you want
+1. Направете копие на папката и я прекръстете ако искате.  
 
 ![multipleBots](public/multipleBots1.png)
 
-2. Run them.
+2. Пуснете ги .
 
 ![multipleBots](public/multipleBots2.png)
