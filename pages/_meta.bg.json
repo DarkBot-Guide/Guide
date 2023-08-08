@@ -1,0 +1,18 @@
+{
+  "index": "Начало",
+  "installation": "Инсталация",
+  "configuration": "Настройване",
+  "donors": "Донорска роля",
+  "faq": "FAQ",
+  "troubleshooting": "Ръководство за остраняване на грешки",
+  "about": {
+    "title": "За нас",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Контакти ↗",
+    "type": "page",
+    "href": "https://darkbot.eu/",
+    "newWindow": true
+  }
+}

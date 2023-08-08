@@ -1,0 +1,53 @@
+## 1. Приоритети за NPC (Същото важи и за кутиите )
+
+1. Пример #1
+```bash
+A -5 Приоритет
+B 0 Приоритет
+```
+Отива към A първо
+
+2. Пример #2
+```bash 
+A 2 Приоритет
+B -6 Приоритет
+```
+Отива в B първо
+
+3. Пример #3
+```bash 
+A 0 Priority
+B -20 Priority (Appears after a while in Sight)
+```
+Goes for B
+ 
+But in this case even if Bot is shooting right now A with 50% Health left and B appears in sight it will stop shooting A and move to B
+If priority difference is like 20 priorities bellow from others that one will be Always preferred no matter what Bot is shooting
+
+4. Пример #4
+```bash
+A 15 Priority
+B 0 Priority
+```
+This one kinda complicated/tricky
+If A has less than 50%▼ HP continue killing it else above 50%▲ HP go kill B.
+
+Here more Information about that (thanks to Punika):
+1. NPC that is currently Locked and have Full HP getting 10 Extra Priority.
+2. Then every Missing 10% HP of Locked NPC give 1 Extra Priority.
+ 
+Пример:
+```bash
+Locked NPC with 50% HP gives 15 Extra Priority.
+Locked NPC with 20% HP 18 Extra Priority.
+```
+
+## 2. How to run multiple bots?
+
+1. Duplicate your bot folder and rename it if you want
+
+![multipleBots](public/multipleBots1.png)
+
+2. Run them.
+
+![multipleBots](public/multipleBots2.png)
