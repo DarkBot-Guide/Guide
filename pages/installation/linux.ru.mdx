@@ -1,20 +1,25 @@
 # Как установить и запустить DarkBot в Linux?
 
 ## 1. Установка DarkBot на свой ПК
-1. создайте нового пользователя (не используйте «root»);
-2. откройте терминал, скопируйте и вставьте эту команду и нажмите ENTER:
+1. откройте терминал;
+2. скопируйте, вставьте команду и нажмите ENTER:
 
-`curl https://raw.githubusercontent.com/0dayYakuza/darkbot_linux/main/install_desktop.sh | bash`
+```bash
+curl https://raw.githubusercontent.com/0dayYakuza/darkbot_linux/main/install_desktop.sh | bash
+```
 
 ## 2. Установка DarkBot на VPS
-1. скачайте PuTTy или любое подобное приложение и подключитесь к VPS;
+1. скачайте PuTTy или любое похожее приложение и подключитесь к VPS;
 
 `Ссылка на PuTTy:` https://www.putty.org/
 
 2. создайте нового пользователя (не используйте «root»);
 3. откройте терминал, скопируйте и вставьте эту команду и нажмите ENTER:
 
-`curl https://raw.githubusercontent.com/0dayYakuza/darkbot_linux/main/install_vps.sh | bash`
+```bash
+curl https://raw.githubusercontent.com/0dayYakuza/darkbot_linux/main/install_vps.sh | bash
+```
+
 4. Когда закончится установка, закройте терминал и подключитесь к VPS через подключение к удаленному рабочему столу (RDP).
 
 ## 3. Как запустить DarkBot?
@@ -26,7 +31,7 @@ cd Downloads/darkbot && java -jar DarkBot.jar
 
 ## 4. Устранение неполадок
 1. Если бот запрашивает подтверждение, откройте браузер вручную, перейдите по адресу http://localhost:55230/ и авторизуйте свою учетную запись Discord.
-2. Если API не загружается, установите для API значение tanos_api в настройках бота или удалите файлы конфигурации из папки бота, а затем повторите попытку.
+2. Если API не загружается, установите для API значение **tanos_api** в настройках бота или удалите файлы конфигурации из папки бота, а затем повторите попытку.
 3. unknown command wget
 - sudo yum install wget
 4. unknown command unzip
