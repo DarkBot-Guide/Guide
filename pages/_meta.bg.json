@@ -4,14 +4,14 @@
   "configuration": "Настройване",
   "donors": "Донорска роля",
   "faq": "FAQ",
-  "troubleshooting": "Ръководство за остраняване на грешки",
+  "troubleshooting": "Ръководство за отстраняване на грешки",
   "about": {
     "title": "За нас",
-    "type": "page"
+    "type": "Страница"
   },
   "contact": {
     "title": "Контакти ↗",
-    "type": "page",
+    "type": "Страница",
     "href": "https://darkbot.eu/",
     "newWindow": true
   }
