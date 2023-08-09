@@ -1,0 +1,25 @@
+## 1. Как да накараме бота да тръгва автоматично?
+
+Отворете папката на бота и направете тези два файла : *runbot.bat* and *file.properties*.
+
+1. В *file.properties* добавете вашето потребителско име , login и главна парола на бота(ако имате такава сложена).
+
+![fileProperties](public/fileProperties.png)
+
+2. В *runbot.bat* добавете следната команда:
+
+```bash
+START javaw -jar DarkBot.jar -start -login file.properties
+```
+
+![RunBot](public/RunBot1.png)
+
+Ако искате бота да тръгне със специфична конфигурация, тогава добавете:
+
+```bash
+-config config_name
+```
+
+След всички промени трябва да изглежда така :
+
+![RunBot](public/RunBot2.png)

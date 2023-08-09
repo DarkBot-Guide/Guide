@@ -13,7 +13,9 @@ const config: DocsThemeConfig = {
     { locale: 'en', text: 'English' },
     { locale: 'pl', text: 'Polski' },
     { locale: 'es', text: 'Español' },
-    { locale: 'ru', text: 'Русский' }
+    { locale: 'ru', text: 'Русский' },
+    { locale: 'bg', text: 'Български'}
+    
   ]
 }
 
