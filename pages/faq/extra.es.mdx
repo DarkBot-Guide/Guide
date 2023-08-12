@@ -1,53 +1,44 @@
-## 1. Prioridad para los NPCs (es la misma para las cajas)
+## 1. ¿Cómo iniciar automáticamente el bot?
 
-1. Ejemplo 1
+1. Abra la carpeta con su bot y cree dos archivos: *runbot.bat* y *file.properties*.
+
+2. En *archivo.propiedades* ingrese el nombre de usuario, la contraseña y la contraseña maestra (si corresponde).
+
+![fileProperties](public/fileProperties.png)
+
+3. En *runbot.bat* escribe el siguiente comando:
+
 ```bash
-A -5 Prioridad
-B 0 Prioridad
+START javaw -jar DarkBot.jar -start -login file.properties
 ```
-Irá primero a por A
 
-2. Ejemplo
-```bash 
-A 2 Prioridad
-B -6 Prioridad
-```
-Irá primero a por B
+![RunBot](public/RunBot1.png)
 
-3. Ejemplo 3
-```bash 
-A 0 Prioridad
-B -20 Prioridad (Después de un rato aparece cerca nuestra)
-```
-Irá primero a por B
- 
-En este caso, si el bot  esta disparando al NPC A y le queda 50%, si aparece el NPC B, dejará de atacar al NPC A y atacará al NPC B
-Si la diferencia de prioridad es como 20 prioridades por debajo de los demás que uno siempre será preferido no importa lo que Bot está disparando
+4. Si desea ejecutar el bot con una configuración específica, agregue:
 
-4. Ejemplo 4
 ```bash
-A 15 Prioridad
-B 0 Prioridad
-```
-Esta un poco complicado / difícil
-Si A tiene menos de 50%▼ de vida continuará matándolo si tiene más de  50%▲ de vida irá a matar a B.
-
-Más información sobre esto: (Gracias a Punisher)
-1. El NPC que esta apuntado y tenga la vida completa, obtiene 10 puntos de prioridad extra
-2. Cada 10% de vida menos en el NPC que esta apuntado da 1 de prioridad extra.
-
-Ejemplo:
-```bash
-NPC apuntado con 50% de vida, obtiene 15 puntos extra de prioridad.
-NPC apuntado con 20% de vida, obtiene 18 puntos extra de prioridad.
+-config config_name
 ```
 
-## 2. ¿Cómo ejecutar varios bots a la vez?
+Después de todos los cambios, debería verse así:
 
-1. Duplica la carpeta de tu bot y cambiale al nombre que tu quieras
+![RunBot](public/RunBot2.png)
+
+## 2. ¿Cómo ejecutar múltiples bots?
+
+1. Duplica la carpeta con tu bot y cámbiale el nombre si quieres, e ingresa los detalles de otra cuenta.
 
 ![multipleBots](public/multipleBots1.png)
 
-2. Ejecútalo.
+2. Ejecútelos.
 
 ![multipleBots](public/multipleBots2.png)
+
+## 3. ¿Cómo puedo averiguar el SID y el servidor?
+1. Haga clic derecho en la página cuando haya iniciado sesión en DarkOrbit a través del navegador.
+
+2. Seleccione "Mostrar sitio/fuente del sitio web" (esto lo llevará a una nueva pestaña o bloc de notas, etc.).
+
+3. CTRL+F y escriba "SID".
+
+![dosid](public/dosid.png)

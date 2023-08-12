@@ -1,53 +1,44 @@
-## 1. NPC priority (same for boxes)
+## 1. How to autostart the bot?
 
-1. Example #1
+1. Open the folder with your bot and create two files: *runbot.bat* and *file.properties*.
+
+2. In *file.properties* enter login, password and master password (if any).
+
+![fileProperties](public/fileProperties.png)
+
+3. In *runbot.bat* write the following command:
+
 ```bash
-A -5 Priority
-B 0 Priority
+START javaw -jar DarkBot.jar -start -login file.properties
 ```
-Goes for A first
 
-2. Example #2
-```bash 
-A 2 Priority
-B -6 Priority
-```
-Goes for B first
+![RunBot](public/RunBot1.png)
 
-3. Example #3
-```bash 
-A 0 Priority
-B -20 Priority (Appears after a while in Sight)
-```
-Goes for B
- 
-But in this case even if Bot is shooting right now A with 50% Health left and B appears in sight it will stop shooting A and move to B
-If priority difference is like 20 priorities bellow from others that one will be Always preferred no matter what Bot is shooting
+4. If you want to run the bot with a specific configuration, add:
 
-4. Example #4
 ```bash
-A 15 Priority
-B 0 Priority
+-config config_name
 ```
-This one kinda complicated/tricky
-If A has less than 50%▼ HP continue killing it else above 50%▲ HP go kill B.
 
-Here more Information about that (thanks to Punika):
-1. NPC that is currently Locked and have Full HP getting 10 Extra Priority.
-2. Then every Missing 10% HP of Locked NPC give 1 Extra Priority.
- 
-Example:
-```bash
-Locked NPC with 50% HP gives 15 Extra Priority.
-Locked NPC with 20% HP 18 Extra Priority.
-```
+After all the changes, it should look like this:
+
+![RunBot](public/RunBot2.png)
 
 ## 2. How to run multiple bots?
 
-1. Duplicate your bot folder and rename it if you want
+1. Duplicate the folder with your bot and rename it if you want, and enter the details of another account.
 
 ![multipleBots](public/multipleBots1.png)
 
 2. Run them.
 
 ![multipleBots](public/multipleBots2.png)
+
+## 3. How can I find out the SID and the server?
+1. Right click on the page when you are logged into DarkOrbit through the browser.
+
+2. Select "display site/website source" (this will take you to a new tab or notepad, etc.).
+
+3. CTRL+F and type "SID".
+
+![dosid](public/dosid.png)

@@ -1,71 +1,71 @@
-## 1. List with npc and their range
-You can use **TYXPlugin** - *NPCRadiusList* or *BoxesList*
+## 1. List with npc and their radius
+You can use **TYXPlugin** plugin - *NPCRadiusList* or *BoxesList*
 
 ```diff
-- X-1 TO X-4 MAPS
-+ Streuner 450
-+ Lordakia 450
-+ Saimon 500
-+ Mordon 500
-+ Devolarium 550
-+ Sibelon 550
-+ Boss Streuner 450
-+ Boss Lordakia 450
-+ Boss Saimon 500
-+ Boss Mordon 520
-+ Boss Devolarium 575
-+ Boss Sibelon 570
+- Maps X-1 to X-4
++ Streuner          450
++ Lordakia          450
++ Simon             500
++ Mordon            500
++ Devolarium        550
++ Sibelon           550
++ Boss Streuner     450
++ Boss Lordakia     450
++ Boss Saimon       500
++ Boss Mordon       520
++ Boss Devolarium   575
++ Boss Sibelon      570
 
-- X-5 TO X-8 MAPS
-+ Sibelonit 575
-+ Lordakium 610
-+ Kristallin 575
-+ Kristallon 600
-+ StrauneR 600
-+ Cubicon 525
-+ Protegit 525
-+ Boss Sibelonit 575
-+ Boss Lordakium 625
-+ Boss Kristallin 575
-+ Boss Kristallon 615
-+ Boss StreuneR 600
+- Maps X-5 to X-8
++ Sibelonite        575
++ Lordakium         610
++ Kristallin        575
++ Crystallon        600
++ StrauneR          600
++ Cubicon           525
++ Protegit          525
++ Boss Sibelonite   575
++ Boss Lordakium    625
++ Boss Kristallin   575
++ Boss Kristallon   615
++ Boss StreuneR     600
 
-- UBER MAP
-+ Uber Streuner 500
-+ Uber Lordakia 500
-+ Uber Simon 500
-+ Uber Mordon 580
-+ Uber Devolarium 500
-+ Uber Sibelon 600
-+ Uber Sibelonit 575
-+ Uber Lordakium 600
-+ Uber Kristallin 580
-+ Uber Kristallon 625
-+ Uber StrauneR 580
+- Uber cards
++ Uber Streuner     500
++ Uber Lordakia     500
++ Uber Simon        500
++ Uber Mordon       580
++ Uber Devolarium   500
++ Uber Sibelon      600
++ Uber Sibelonit    575
++ Uber Lordakium    600
++ Uber Kristallin   580
++ Uber Kristallon   625
++ Uber StrauneR     580
 
-- BL MAPS
-+ \ Attend IX // 670 
-+ \\  Impulse II //  600-630
+- BL cards
++ \ Attend IX //    670
++ \\ Impulse II //  600-630
 
-- PIRATE MAP 5-2
-+ -=[ Saboteur ]=-    580
-+ -=[ Interceptor ]=-    500
-+ -=[ Barracuda ]=-    560
-+ -=[ Annihilator ]=-    575
+- Pirate Map 5-2
++ -=[ Saboteur ]=-      580
++ -=[ Interceptor ]=-   500
++ -=[ Barracuda ]=-     560
++ -=[ Annihilator ]=-   575
 
 - MIMESIS EVENT
-+ -=[ Raging Mimes1s    ]=-    590
-+ -=[ Kamikaze Mime5is ]=-    580
-+ -=[ Cloning Mim3sis ]=-    590
-+ -=[ Cloned Mim3sis ]=-    590
-+ -=[ Terror Mime5is ]=-    610
-+ -=[ Hexor M1mesis ]=-    590
-+ -=[ Reflector Mimesi5 ]=-    670
++ -=[ Raging Mimes1s ]=-        590
++ -=[ Kamikaze Mime5is ]=-      580
++ -=[ Cloning Mim3sis ]=-       590
++ -=[ Cloned Mim3sis ]=-        590
++ -=[ Terror Mime5is ]=-        610
++ -=[ Hexor M1mesis ]=-         590
++ -=[ Reflector Mimesi5 ]=-     670
 ```
 
-## 2. Boxes names with wait MS times
+## 2. Resource and box names
 ```diff
-- Boxes without setting wait time
+- Resources/boxes without time
 + ore_0                 = Prometium
 + ore_1                 = Endurium
 + ore_2                 = Terbium
@@ -85,37 +85,82 @@ You can use **TYXPlugin** - *NPCRadiusList* or *BoxesList*
 + UBERBATTLERAY_BOX     = Uber Battleray Box
 + UBERINTERCEPTOR_BOX   = Uber Interceptor Box
 + UBERSABOTEUR_BOX      = Uber Saboteur Box
-+ HYBRID_ALLOY_BOX      = Box from Gygerthrall's 
-+ INDOCTRINE_OIL_BOX    = Box from X-7 Gate 
++ HYBRID_ALLOY_BOX      = Box from Gygerthrall's
++ INDOCTRINE_OIL_BOX    = Box from X-7 Gate
 
+- Boxes with BL cards
++ SOLAR_CLASH           = Invoke/Behemoth Box
 
-- Boxes from BL MAP
-+ SOLAR_CLASH           = Box from invokes & Behemoth
+- Boxes that collect after x time
++ ore_8                 = Palladium 750 ms
++ PIRATE_BOOTY          = Pirate booty 5500 ms
++ PIRATE_BOOTY_RED      = Red Booty 5500 ms
++ PIRATE_BOOTY_GOLD     = Gold Booty 5500 ms
++ PIRATE_BOOTY_BLUE     = Blue Booty 5500 ms
++ MASQUE_BOOTY_BOX      = Apocalypse 5500 ms
++ BLACK_BOOTY_BOX       = Obsidian Booty 5500 ms
 
-
-
-- Boxes where you need to add custom wait time
-+ ore_8             = Palladium      750 ms
-+ PIRATE_BOOTY      = Pirate booty   5500 ms
-+ PIRATE_BOOTY_RED  = Red Booty      5500 ms
-+ PIRATE_BOOTY_GOLD = Gold Booty     5500 ms
-+ PIRATE_BOOTY_BLUE = Blue Booty     5500 ms
-+ MASQUE_BOOTY_BOX  = Apocalypse     5500 ms
-+ BLACK_BOOTY_BOX   = Obsidian Booty 5500 ms
-
-- Boxes from Events
-+ CHROMIN_BOX_1 = Chromin box from gates
-+ CHROMIN_BOX_2 = Chromin box from gates
-+ CHROMIN_BOX_3 = Chromin box from gates
-+ DEMON_BOX     = Box from VoT gate
-+ TREASURE      = Mimesis Event
+- Event boxes
++ CHROMIN_BOX_1         = Chromin box from gates
++ CHROMIN_BOX_2         = Chromin box from gates
++ CHROMIN_BOX_3         = Chromin box from gates
++ DEMON_BOX             = Box from VoT gate
++ TREASURE              = Mimesis Event
   
-- Resources that are not collectable but visible in resource tab
-(Don't collect them!)
-+ mine_3    = Mine
+- Resources that cannot be collected, but are visible in the resources tab.
++ mine_3    = mine
 + firework  = Fireworks
 
-- Resources that I'm not sure what they give
+- Resources I'm not sure what they give
 + UBA_EXPO_BOX
 + HELIX_BOX
+```
+
+## 3. NPC priority (works for boxes too)
+
+1. Example #1
+```bash
+A   -5
+B   0
+
+flies to A
+```
+
+2. Example #2
+
+```bash
+A   2
+B   -6
+
+flies to B
+```
+
+3. Example #3
+```bash
+A   0
+B   -20 (appears after a while in the field of view)
+
+flies to B
+```
+But in this case, even if the bot is now shooting at A, which has 50% health left, and B comes into view, it will stop shooting at A and fly towards B.
+
+If the priority difference is about 20 points lower than the others, then one of them will always be preferred, no matter who the bot kills.
+
+4. Example #4
+```bash
+A   15
+B   0
+
+If A is below 50%▼ HP, the bot will continue to kill him, if HP is above 50%▲, the bot will fly towards B.
+```
+
+Here is more information about it (thanks PUNIKA):
+1. NPCs that are currently attacked and have full HP gain 10 extra points.
+2. Then, every 10% of the attacked NPC's missing health grants 1 additional point.
+ 
+Example:
+
+```bash
+An attacked NPC with 50% HP gives 15 extra points.
+Attacked NPC with 20% HP 18 extra points.
 ```

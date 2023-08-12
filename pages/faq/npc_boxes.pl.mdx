@@ -1,101 +1,98 @@
-## 1. Lista z npc i ich zasięgiem
-Możesz użyć **TYXPlugin** - *NPCRadiusList* lub *BoxesList*
+## 1. Lista z npc i ich promieniem
+Możesz użyć wtyczki **TYXPlugin** - *NPCRadiusList* lub *BoxesList*
 
 ```diff
-- MAPY X-1 DO X-4
-+ Streuner 450
-+ Lordakia 450
-+ Saimon 500
-+ Mordon 500
-+ Devolarium 550
-+ Sibelon 550
-+ Boss Streuner 450
-+ Boss Lordakia 450
-+ Boss Saimon 500
-+ Boss Mordon 520
-+ Boss Devolarium 575
-+ Boss Sibelon 570
+- Mapy X-1 do X-4
++ Streuner          450
++ Lordakia          450
++ Saimon            500
++ Mordon            500
++ Devolarium        550
++ Sibelon           550
++ Boss Streuner     450
++ Boss Lordakia     450
++ Boss Saimon       500
++ Boss Mordon       520
++ Boss Devolarium   575
++ Boss Sibelon      570
 
-- MAPY X-5 DO X-8
-+ Sibelonit 575
-+ Lordakium 610
-+ Kristallin 575
-+ Kristallon 600
-+ StrauneR 600
-+ Cubicon 525
-+ Protegit 525
-+ Boss Sibelonit 575
-+ Boss Lordakium 625
-+ Boss Kristallin 575
-+ Boss Kristallon 615
-+ Boss StreuneR 600
+- Mapuje X-5 do X-8
++ Sibelonit         575
++ Lordakium         610
++ Kristallin        575
++ Kristallon        600
++ StrauneR          600
++ Cubicon           525
++ Protegit          525
++ Boss Sibelonit    575
++ Boss Lordakium    625
++ Boss Kristallin   575
++ Boss Kristallon   615
++ Boss StreuneR     600
 
-- UBER MAPA
-+ Uber Streuner 500
-+ Uber Lordakia 500
-+ Uber Simon 500
-+ Uber Mordon 580
-+ Uber Devolarium 500
-+ Uber Sibelon 600
-+ Uber Sibelonit 575
-+ Uber Lordakium 600
-+ Uber Kristallin 580
-+ Uber Kristallon 625
-+ Uber StrauneR 580
+- Karty Ubera
++ Uber Streuner     500
++ Uber Lordakia     500
++ Uber Simon        500
++ Uber Mordon       580
++ Uber Devolarium   500
++ Uber Sibelon      600
++ Uber Sibelonit    575
++ Uber Lordakium    600
++ Uber Kristallin   580
++ Uber Kristallon   625
++ Uber StrauneR     580
 
-- BL MAPY
-+ \ Attend IX // 670 
+- karty BL
++ \ Attend IX //     670 
 + \\  Impulse II //  600-630
 
-- MAPA PIRACKA 5-2
-+ -=[ Saboteur ]=-    580
-+ -=[ Interceptor ]=-    500
-+ -=[ Barracuda ]=-    560
-+ -=[ Annihilator ]=-    575
+- Piracka mapa 5-2
++ -=[ Saboteur ]=-      580
++ -=[ Interceptor ]=-   500
++ -=[ Barracuda ]=-     560
++ -=[ Annihilator ]=-   575
 
-- WYDARZENIE MIMESIS
-+ -=[ Raging Mimes1s ]=-    590
-+ -=[ Kamikaze Mime5is ]=-    580
-+ -=[ Cloning Mim3sis ]=-    590
-+ -=[ Cloned Mim3sis ]=-    590
-+ -=[ Terror Mime5is ]=-    610
-+ -=[ Hexor M1mesis ]=-    590
-+ -=[ Reflector Mimesi5 ]=-    670
+- MIMESIS EVENT
++ -=[ Raging Mimes1s    ]=-     590
++ -=[ Kamikaze Mime5is ]=-      580
++ -=[ Cloning Mim3sis ]=-       590
++ -=[ Cloned Mim3sis ]=-        590
++ -=[ Terror Mime5is ]=-        610
++ -=[ Hexor M1mesis ]=-         590
++ -=[ Reflector Mimesi5 ]=-     670
 ```
 
-## 2. Nazwy pól z czasem oczekiwania MS
+## 2. Nazwy zasobów i skrzynek
 ```diff
-- Boxes without setting wait time
+- Zasoby/skrzynie bez czasu
 + ore_0                 = Prometium
 + ore_1                 = Endurium
 + ore_2                 = Terbium
 + scrapium              = Scrap
 + BOLTRUM               = Plazmid
-+ MUCOSUM               = ŚLUZÓWKA
-+ PRISMATIUM            = PRYZMAT
++ MUCOSUM               = Mucosum
++ PRISMATIUM            = Prismatium
 + FROM_SHIP             = Skrzynia ładunkowa
 + BIFENON_2             = Pudełko bifenonowe z kubikonów
 + BIFENON               = Bifenon
 + AURUS_BOX             = Aurus
-+ BONUS_BOX             = Pudełko bonusowe
++ BONUS_BOX             = Bonus box
 + ALIEN_EGG             = Pudełko bonusowe wygląda jak EGG
 + GIFT_BOXES            = Pudełko bonusowe wygląda jak PREZENT
 + UBERANNIHILATOR_BOX   = Uber Annihilator Box
 + UBERBARRACUDA_BOX     = Pudełko Uber Barracuda
 + UBERBATTLERAY_BOX     = Pudełko Uber Battleray
-+ UBERINTERCEPTOR_BOX   = Pudełko Uber Interceptor
-+ UBERSABOTEUR_BOX      = Pudełko Uber Saboteur
++ UBERINTERCEPTOR_BOX   = Uber Interceptor Box
++ UBERSABOTEUR_BOX      = Pudełko super sabotażysty
 + HYBRID_ALLOY_BOX      = Pudełko od Gygerthralla
 + INDOCTRINE_OIL_BOX    = Pudełko z bramy X-7
 
+- Pudełka z kartami BL
++ SOLAR_CLASH           = Invok/Behemoth Box
 
-- Pudełka z BL MAP
-+ SOLAR_CLASH           = Pudełko z inwokacji i Behemotha
-
-
-
-- Pudełka, w których musisz dodać niestandardowy czas oczekiwania
-+ ore_8             = Palladium         750 ms
+- Pudełka, które zbierają się po x czasie
++ ore_8             = Pallad            750 ms
 + PIRATE_BOOTY      = Łup pirata        5500 ms
 + PIRATE_BOOTY_RED  = Czerwony łup      5500 ms
 + PIRATE_BOOTY_GOLD = Złoty łup         5500 ms
@@ -103,19 +100,67 @@ Możesz użyć **TYXPlugin** - *NPCRadiusList* lub *BoxesList*
 + MASQUE_BOOTY_BOX  = Apokalipsa        5500 ms
 + BLACK_BOOTY_BOX   = Obsydianowy łup   5500 ms
 
-- Pudełka z Eventów
+- Skrzynki zdarzeń
 + CHROMIN_BOX_1 = Chrominowa skrzynia z bram
 + CHROMIN_BOX_2 = Chrominowa skrzynia z bram
 + CHROMIN_BOX_3 = Chrominowa skrzynia z bram
-+ DEMON_BOX = Pudełko z bramki VoT
-+ SKARB = Wydarzenie Mimesis
++ DEMON_BOX     = Pudełko z bramki VoT
++ SKARB         = Wydarzenie Mimesis
   
-- Zasoby, których nie można zebrać, ale są widoczne w zakładce zasobów
-(Nie zbieraj ich!)
-+ mine_3    = Moje
-+ firework  = Fireworks
+- Zasoby, których nie można zebrać, ale są widoczne w zakładce zasobów.
++ moje_3    = moje
++ fajerwerk = Fajerwerki
 
-- Zasoby, których nie jestem pewien, co dają
+- Zasoby Nie jestem pewien, co dają
 + UBA_EXPO_BOX
 + HELIX_BOX
+```
+
+## 3. Priorytet NPC (działa również dla skrzynek)
+
+1. Przykład nr 1
+```bash
+A   -5
+B   0
+
+leci do A
+```
+
+2. Przykład nr 2
+
+```bash
+A   2
+B   -6
+
+leci do B
+```
+
+3. Przykład nr 3
+```bash
+A   0
+B   -20 (pojawia się po chwili w polu widzenia)
+
+leci do B
+```
+Ale w tym przypadku, nawet jeśli bot strzela teraz do A, który ma 50% zdrowia, a B pojawi się w polu widzenia, przestanie strzelać do A i poleci w kierunku B.
+
+Jeśli różnica priorytetów jest o około 20 punktów niższa niż pozostałych, to zawsze jeden z nich będzie preferowany, bez względu na to, kogo bot zabije.
+
+4. Przykład nr 4
+```bash
+A   15
+B   0
+
+Jeśli A ma mniej niż 50% ▼ HP, bot będzie nadal go zabijał, jeśli HP jest powyżej 50% ▲, bot poleci w kierunku B.
+```
+
+Oto więcej informacji na ten temat (dzięki PUNIKA):
+1. BN, którzy są aktualnie atakowani i mają pełne HP, zyskują 10 dodatkowych punktów.
+2. Następnie każde 10% brakującego zdrowia atakowanego NPC daje 1 dodatkowy punkt.
+ 
+Przykład:
+
+```bash
+Zaatakowany NPC z 50% HP daje 15 dodatkowych punktów.
+Zaatakowany NPC z 20% HP 18 dodatkowych punktów.
 ```

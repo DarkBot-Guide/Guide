@@ -1,121 +1,166 @@
-## 1. Lista de NPCs y sus rangos
-Puedes usar el  **TYXPlugin** - *NPCRadiusList* o *BoxesList*
+## 1. Lista con npc y su radio
+Puede usar el complemento **TYXPlugin** - *NPCRadiusList* o *BoxesList*
 
 ```diff
-- Mapas X-1 hasta X-4
-+ Streuner 450
-+ Lordakia 450
-+ Saimon 500
-+ Mordon 500
-+ Devolarium 550
-+ Sibelon 550
-+ Boss Streuner 450
-+ Boss Lordakia 450
-+ Boss Saimon 500
-+ Boss Mordon 520
-+ Boss Devolarium 575
-+ Boss Sibelon 570
+- Mapas X-1 a X-4
++ Streuner          450
++ Lordakia          450
++ Simón             500
++ Mordón            500
++ Devolarium        550
++ Sibelón           550
++ Boss Streuner     450
++ Jefe Lordakia     450
++ Jefe Saimon       500
++ Jefe Mordón       520
++ Jefe Devolarium   575
++ Jefe Sibelon      570
 
-- Mapas X-5 hasta X-8
-+ Sibelonit 575
-+ Lordakium 610
-+ Kristallin 575
-+ Kristallon 600
-+ StrauneR 600
-+ Cubicon 525
-+ Protegit 525
-+ Boss Sibelonit 575
-+ Boss Lordakium 625
-+ Boss Kristallin 575
-+ Boss Kristallon 615
-+ Boss StreuneR 600
+- Mapas X-5 a X-8
++ Sibelonita        575
++ Lordakium         610
++ Kristalina        575
++ Crystallon        600
++ Strauner          600
++ Cubicon           525
++ Protegido         525
++ Boss Sibelonita   575
++ Jefe Lordakium    625
++ Jefe Kristallin   575
++ Jefe Kristallon   615
++ Boss Streuner     600
 
-- 4-5
-+ Uber Streuner 500
-+ Uber Lordakia 500
-+ Uber Simon 500
-+ Uber Mordon 580
-+ Uber Devolarium 500
-+ Uber Sibelon 600
-+ Uber Sibelonit 575
-+ Uber Lordakium 600
-+ Uber Kristallin 580
-+ Uber Kristallon 625
-+ Uber StrauneR 580
+- tarjetas uber
++ Uber Streuner     500
++ Uber Lordakia     500
++ Uber Simón        500
++ Uber Mordón       580
++ Uber Devolarium   500
++ Uber Sibelón      600
++ Uber Sibelonit    575
++ Uber Lordakium    600
++ Uber Kristallin   580
++ Uber Kristallon   625
++ Uber StrauneR     580
 
-- Mapas BL (1BL,2BL,3BL)
-+ \ Attend IX // 670 
-+ \\  Impulse II //  600-630
+- Tarjetas BL
++ \ Asistir IX //   670
++ \\ Impulso II //  600-630
 
-- Mapas Pirata (5-1,5-2, 5-3)
-+ -=[ Saboteur ]=-    580
-+ -=[ Interceptor ]=-    500
-+ -=[ Barracuda ]=-    560
-+ -=[ Annihilator ]=-    575
+- Mapa Pirata 5-2
++ -=[ Saboteador ]=-    580
++ -=[ Interceptor ]=-   500
++ -=[ Barracuda ]=-     560
++ -=[ Aniquilador ]=-   575
 
-- Evento Mimesis
-+ -=[ Raging Mimes1s    ]=-    590
-+ -=[ Kamikaze Mime5is ]=-    580
-+ -=[ Cloning Mim3sis ]=-    590
-+ -=[ Cloned Mim3sis ]=-    590
+- EVENTO MÍMESIS
++ -=[ Mimos furiosos1s ]=-  590
++ -=[ Kamikaze Mime5is ]=-  580
++ -=[ Clonación Mim3sis ]=- 590
++ -=[ Clonado Mim3sis ]=-   590
 + -=[ Terror Mime5is ]=-    610
-+ -=[ Hexor M1mesis ]=-    590
-+ -=[ Reflector Mimesi5 ]=-    670
++ -=[ Hexor M1mesis ]=-     590
++ -=[ Reflector Mimesi5 ]=- 670
 ```
 
-## 2. Nombre de las cajas y sus tiempo de espera (en milisegundos)
+## 2. Nombres de recursos y cajas
 ```diff
-- Cajas sin tiempo de espera
-+ ore_0                 = Prometium
-+ ore_1                 = Endurium
-+ ore_2                 = Terbium
-+ scrapium              = Chatarra
-+ BOLTRUM               = Plásmido
-+ MUCOSUM               = Mucosum
-+ PRISMATIUM            = Prismatium
-+ FROM_SHIP             = Cajas de carga
-+ BIFENON_2             = Cajas de Bifenon de los Cubikon
-+ BIFENON               = Bifenon
-+ AURUS_BOX             = Aurus
-+ BONUS_BOX             = Cajas Bono
-+ ALIEN_EGG             = Cajas de bono que tienen apariencia de un huevo
-+ GIFT_BOXES            = Cajas de bono que tienen apariencia de un regalo
-+ UBERANNIHILATOR_BOX   = Caja de Uber Annihilator
-+ UBERBARRACUDA_BOX     = Caja de Uber Barracuda
+- Recursos/cajas sin tiempo
++ ore_0                 = prometio
++ ore_1                 = Enduro
++ ore_2                 = terbio
++ scrapium              = chatarra
++ BOLTRUM               = plásmido
++ MUCOSA                = Mucosa
++ PRISMACIO             = Prismacio
++ FROM_SHIP             = Caja de carga
++ BIFENON_2             = Caja bifenón de cubikons
++ BIFENÓN               = Bifenón
++ AURUS_BOX             = Auro
++ BONUS_BOX             = Caja de bonificación
++ ALIEN_EGG             = La caja de bonificación se parece a EGG
++ GIFT_BOXES            = La caja de bonificación parece REGALO
++ UBERANNIHILATOR_BOX   = Caja de Uber Aniquilador
++ UBERBARRACUDA_BOX     = Caja Uber Barracuda
 + UBERBATTLERAY_BOX     = Caja de Uber Battleray
-+ UBERINTERCEPTOR_BOX   = Caja de Uber Interceptor
-+ UBERSABOTEUR_BOX      = Caja de Uber Saboteur
-+ HYBRID_ALLOY_BOX      = Caja de los NPC Gygerthrall's 
-+ INDOCTRINE_OIL_BOX    = Caja de la puerta Cuarentena (QZ)
++ UBERINTERCEPTOR_BOX   = Caja Interceptor Uber
++ UBERSABOTEUR_BOX      = Caja de saboteador de Uber
++ HYBRID_ALLOY_BOX      = Caja de Gygerthrall
++ INDOCTRINE_OIL_BOX    = Caja de la puerta X-7
 
+- Cajas con tarjetas BL
++ SOLAR_CLASH = Caja Invok/Behemoth
 
-- Caja de los Mapas BL (1BL,2BL,3BL)
-+ SOLAR_CLASH           = Caja de  invokes y Behemoth
-
-
-
-- Cajas que necesitan tiempo de espera
-+ ore_8             = Paladio               750 ms
-+ PIRATE_BOOTY      = Cofre verde           5500 ms
-+ PIRATE_BOOTY_RED  = Cofre rojo            5500 ms
-+ PIRATE_BOOTY_GOLD = Cofre dorado          5500 ms
-+ PIRATE_BOOTY_BLUE = Cofre azul            5500 ms
-+ MASQUE_BOOTY_BOX  = Cofre apocaípsis      5500 ms
-+ BLACK_BOOTY_BOX   = Cofre Obsidiana       5500 ms
+- Cajas que se recogen después de x tiempo
++ ore_8             = Paladio           750 ms
++ PIRATE_BOOTY      = Botín pirata      5500 ms
++ PIRATE_BOOTY_RED  = Botín rojo        5500 ms
++ PIRATE_BOOTY_GOLD = Botín de oro      5500 ms
++ PIRATE_BOOTY_BLUE = Botín azul        5500 ms
++ MASQUE_BOOTY_BOX  = Apocalipsis       5500 ms
++ BLACK_BOOTY_BOX   = Botín de obsidiana 5500 ms
 
 - Cajas de eventos
-+ CHROMIN_BOX_1 = Chromin de GGs
-+ CHROMIN_BOX_2 = Chromin de GGs
-+ CHROMIN_BOX_3 = Chromin de GGs
-+ DEMON_BOX     = Caja de la puerta VoT
-+ TREASURE      = Caja del evento Mimesis
++ CHROMIN_BOX_1     = Caja Chromin de puertas
++ CHROMIN_BOX_2     = Caja Chromin de puertas
++ CHROMIN_BOX_3     = Caja Chromin de puertas
++ DEMON_BOX         = Caja de la puerta VoT
++ TESORO            = Evento Mimesis
   
-- Recursos que no es posible recogerlos pero son visibles en la tabla
-(No los recojas!)
-+ mine_3    = Mina
-+ firework  = Fuegos Artificiales
+- Recursos que no se pueden recopilar, pero están visibles en la pestaña de recursos.
++ mio_3 = mio
++ fuegos artificiales = fuegos artificiales
 
--Recursos que no estoy seguro que recompensa dan
+- Recursos no estoy seguro de lo que dan
 + UBA_EXPO_BOX
 + HELIX_BOX
+```
+
+## 3. Prioridad NPC (también funciona para cajas)
+
+1. Ejemplo #1
+```bash
+A   -5
+B   0
+
+vuela a A
+```
+
+2. Ejemplo #2
+
+```bash
+A   2
+B   -6
+
+vuela a B
+```
+
+3. Ejemplo #3
+```bash
+A   0
+B   -20 (aparece después de un tiempo en el campo de visión)
+
+vuela a B
+```
+Pero en este caso, incluso si el bot ahora está disparando a A, al que le queda un 50 % de salud, y B aparece a la vista, dejará de disparar a A y volará hacia B.
+
+Si la diferencia de prioridad es de unos 20 puntos menos que los demás, siempre se preferirá uno de ellos, sin importar a quién mate el bot.
+
+4. Ejemplo #4
+```bash
+A   15
+B   0
+
+Si A está por debajo del 50%▼ HP, el bot seguirá matándolo, si HP está por encima del 50%▲, el bot volará hacia B.
+```
+
+Aquí hay más información al respecto (gracias PUNIKA):
+1. Los NPC que están siendo atacados actualmente y tienen HP completo obtienen 10 puntos extra.
+2. Luego, cada 10% de la salud faltante del NPC atacado otorga 1 punto adicional.
+ 
+Ejemplo:
+
+```bash
+Un NPC atacado con 50% HP da 15 puntos extra.
+NPC atacado con 20% HP 18 puntos extra.
 ```
