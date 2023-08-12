@@ -1,25 +1,53 @@
-## 1. Jak automatycznie uruchomić bota?
+# Zapoznanie się z interfejsem bota
 
-Otwórz folder bota i utwórz dwa pliki: *runbot.bat* i *file.properties*.
+## 1. Okno bota
 
-1. W *file.properties* dodaj nazwę użytkownika, login i hasło główne (jeśli je posiadasz).
+![BotWindow](public/BotWindow.png)
 
-![fileProperties](public/fileProperties.png)
+W tym oknie widzimy (wyświetlane w liczbach):
 
-2. W *runbot.bat* dodaj następną komendę:
+1.1 Wersja bota;
 
-```bash
-START javaw -jar DarkBot.jar -start -login file.properties
-```
+1.2 Wydajność bota (po kliknięciu - bardziej szczegółowe informacje, takie jak wersja API, czas taktu itp.);
 
-![RunBot](public/RunBot1.png)
+![BotPerform](public/bot_perfom.png)
 
-Jeśli chcesz uruchomić bota z określoną konfiguracją, dodaj:
+1.3 Ilość aktualizacji, czas pracy bota, aktualny stan (ustawiony moduł Kill & Collect);
 
-```bash
--config config_name
-```
+1.4 SID, jego status i czas aktualizacji;
 
-Czyli po wszystkich zmianach powinno to wyglądać tak:
+1.5 Statystyki;
 
-![RunBot](public/RunBot2.png)
+1.6 Aktualne boostery;
+
+1.7 Pseudonim, ilość HP i tarczy, konfiguracja (1c).
+
+2.1 Kliknięcie na „hamburger” otworzy menu bota.
+
+![bot_menu_button](public/bot_menu_button.png)
+
+2.2 Po kliknięciu ikony „koła zębatego” otworzą się ustawienia bota.
+
+2.3 Ikona w postaci „Dom” umożliwia przejście do strony gry bez „łamania” SID.
+
+3.1 Ikona w postaci "oka" po kliknięciu lewym przyciskiem myszy - ukrywa grę, gdy PPM - otwiera dodatkowe opcje.
+
+![bot_eye_click](public/bot_eye_click.png)
+
+3.1.1 W tym oknie możesz ściszyć dźwięk w grze, zmienić widoczność okna (przezroczystość), jakość gry w grze, przybliżyć/oddalić.
+
+![Eye_settings](public/Eye_settings.gif)
+
+3.1.2 Dołącz okno - okno gry jest dołączone do okna bota, tj. jeśli przesuniesz okno bota, okno gry przesunie się wraz z nim.
+
+![attach_window](public/Attach_window.gif)
+
+3.1.3 Pokaż GameUI i HUD - pokaż/ukryj interfejs gry lub HUD.
+
+![show_hud](public/Show_hud.gif)
+
+3.2 Ikona „szpilki” pozwala, aby okno zawsze znajdowało się nad innymi oknami.
+
+3.3 Minimalizuj do ikony zasobnika.
+
+3.4 A potem są przyciski: Zminimalizuj okno, zmaksymalizuj okno, zamknij.

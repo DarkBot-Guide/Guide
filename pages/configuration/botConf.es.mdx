@@ -1,25 +1,53 @@
-## 1. ¿Cómo iniciar automáticamente el bot?
+# Conociendo la interfaz del bot
 
-Abra la carpeta de su bot y cree dos archivos: *runbot.bat* y *file.properties*.
+## 1. Ventana del bot
 
-1. En *archivo.propiedades* agregue nombre de usuario, inicio de sesión y contraseña maestra (si la tiene).
+![BotWindow](public/BotWindow.png)
 
-![fileProperties](public/fileProperties.png)
+En esta ventana vemos (mostrados en números):
 
-2. En *runbot.bat* agregue el siguiente comando:
+1.1 Versión de bot;
 
-```bash
-START javaw -jar DarkBot.jar -start -login file.properties
-```
+1.2 Rendimiento del bot (al hacer clic, información más detallada, como la versión de la API, el tiempo de activación, etc.);
 
-![RunBot](public/RunBot1.png)
+![BotPerform](public/bot_perfom.png)
 
-Si desea ejecutar bot con una configuración específica, agregue:
+1.3 Número de actualizaciones, tiempo de trabajo del bot, estado actual (el módulo Kill & Collect está configurado);
 
-```bash
--config config_name
-```
+1.4 SID, su estado y tiempo de actualización;
 
-Entonces, después de todos los cambios, debería verse así:
+1.5 Estadísticas;
 
-![RunBot](public/RunBot2.png)
+1.6 Amplificadores de corriente;
+
+1.7 Apodo, cantidad de HP y escudo, config (1c).
+
+2.1 Al hacer clic en la "hamburguesa" se abrirá el menú del bot.
+
+![bot_menu_button](public/bot_menu_button.png)
+
+2.2 Al hacer clic en el icono de "engranaje", se abrirá la configuración del bot.
+
+2.3 El ícono en forma de "Casa" le permite ir a la página del juego sin "romper" el SID.
+
+3.1 Icono en forma de "ojo" cuando se hace clic con el botón izquierdo del mouse: oculta el juego, cuando se usa RMB, se abren opciones adicionales.
+
+![bot_eye_click](public/bot_eye_click.png)
+
+3.1.1 En esta ventana, puede bajar el sonido del juego, cambiar la visibilidad de la ventana (transparencia), la calidad del juego dentro del juego, acercar/alejar.
+
+![Eye_settings](public/Eye_settings.gif)
+
+3.1.2 Adjuntar ventana: la ventana del juego se adjunta a la ventana del bot, es decir, si mueves la ventana del bot, la ventana del juego se moverá con ella.
+
+![attach_window](public/Attach_window.gif)
+
+3.1.3 Mostrar GameUI y HUD: muestra/oculta la interfaz del juego o HUD.
+
+![show_hud](public/Show_hud.gif)
+
+3.2 El icono de "pin" permite que la ventana esté siempre encima de otras ventanas.
+
+3.3 Minimizar al icono de la bandeja.
+
+3.4 Y luego están los botones: Minimizar la ventana, maximizar la ventana, cerrar.
